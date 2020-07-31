@@ -1,0 +1,164 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: var(--dark-grey);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 28px 0;
+}
+
+.navLeft {
+    padding: 0px 32px;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.hamburgerContainer {
+    display: none;
+}
+
+.hamburger {
+    color: var(--dark-grey);
+    font-size: 22px;
+    z-index: 13;
+    cursor: pointer;
+}
+
+.hamburgerClose {
+    position: relative;
+    color: var(--dark-grey);
+    font-size: 22px;
+    z-index: 13;
+    cursor: pointer;
+}
+
+.darkenBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 75%);
+    z-index: 11;
+}
+
+.hamburgerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*transform: translateX(390px);*/
+    height: 100vh;
+    width: 330px;
+    background-color: white;
+    padding: 30px;
+    z-index: 12;
+}
+
+.hamburger:active ~ .hamburgerMenu {
+    /*transform: translateX(0px);*/
+}
+
+.hamburgerMenuItemContainer {
+    padding: 10px 0;
+}
+
+.hamburgerMenuItem {
+    font-size: 24px;
+    color: var(--dark-grey);
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--dark-grey);
+}
+
+.followUsContainer {
+    padding: 60px 0;
+}
+
+.socialLinksContainer {
+    padding: 8px 0;
+    margin-left: -3px;
+}
+
+.socialLink {
+    padding: 0 4px;
+}
+
+.socialLinkIcon {
+    border-radius: 100px;
+    padding: 6px;
+    border: 1px var(--pink) solid;
+
+    background-color: white;
+    font-size: 14px;
+    color: var(--pink);
+
+    transition: all 0.15s ease;
+}
+
+.socialLinkIcon:hover {
+    background-color: var(--pink);
+    color: white;
+}
+
+.navRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right: 14px;
+}
+
+.navRight > div {
+    padding: 0 22px;
+}
+
+.navLink {
+    display: block;
+    position: relative;
+    padding: 3px 0;
+    text-decoration: none;
+    color: var(--dark-grey);
+}
+
+.navLink:hover {
+    cursor: pointer;
+}
+
+.navLink::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    background: var(--pink);
+    transition: transform 0.28s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.navLink:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+@media screen and (max-width: 1024px) {
+    .hamburgerContainer {
+        display: inline;
+        margin-right: 30px;
+    }
+
+    .navRight {
+        display: none;
+    }
+}
+

@@ -26,7 +26,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate="Navi Savi - Real travels. Short videos."
       meta={[
         {
           name: `description`,

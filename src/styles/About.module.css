@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 140px;
+}
+
+.title {
+    font-size: 83px;
+    font-family: "SofiaPro-Bold", sans-serif;
+    color: var(--dark-grey);
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 200px;
+}
+
+.contentContainer > div {
+    margin-bottom: 28px;
+}
+
+.companyPosition {
+    margin-top: -24px;
+}
+
+@media screen and (max-width: 1100px) {
+    .contentContainer {
+        padding: 0 150px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .contentContainer {
+        padding: 0 75px;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .contentContainer {
+        padding: 0 50px;
+    }
+}
+

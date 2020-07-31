@@ -2,13 +2,15 @@ import React, { Component } from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"
-import { FaBars } from "react-icons/fa"
+import { GrClose } from "react-icons/gr"
+import { FaBars, FaRegWindowClose, FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa"
 import { Link } from "gatsby"
+import styles from "../styles/Header.module.css"
 
 export const Logo = () => {
   const data = useStaticQuery(graphql`
     {
-      logo: file(relativePath: { eq: "logo-teal.png" }) {
+      logo: file(relativePath: { eq: "logo-and-name.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             src
@@ -20,8 +22,8 @@ export const Logo = () => {
     }
   `)
   return (
-    <Link to="/" className="flex">
-      <Img fluid={data.logo.childImageSharp.fluid} style={{ width: "185px" }} />
+    <Link to="/" className="">
+      <Img fluid={data.logo.childImageSharp.fluid} style={{ width: "200px" }} />
     </Link>
   )
 }
@@ -45,136 +47,116 @@ export default class Header extends Component {
       navOpen: !prevState.navOpen,
     }))
   }
+
   render() {
+    if (typeof document !== "undefined") document.body.style.overflow = this.state.navOpen ? "hidden" : "scroll";
     const { navOpen } = this.state
-    return (
-      <div className="flex justify-between px-6 lg:px-24">
-        <Logo />
-        <div
-          className="lg:hidden teal self-center relative cursor-pointer"
-          onClick={() => this.toggleNav()}
-        >
-          <FaBars className="cursor-pointer" />
-          <div className="teal absolute" style={{ right: "0" }}>
-            {navOpen && (
-              <ul className="text-right">
-                <li className="whitespace-no-wrap my-1 cursor-pointer nav-item-hover">
-                  <ScrollLink
-                    to="learn"
-                    smooth={true}
-                    duration={500}
-                    className="fredoka teal"
-                    offset={96}
-                  >
-                    Learn
-                  </ScrollLink>
-                </li>
-                <li className="whitespace-no-wrap my-1 cursor-pointer nav-item-hover">
-                  <ScrollLink
-                    to="features"
-                    smooth={true}
-                    duration={500}
-                    className="fredoka teal"
-                    offset={96}
-                  >
-                    Features
-                  </ScrollLink>
-                </li>
-                <li className="whitespace-no-wrap my-1 cursor-pointer nav-item-hover">
-                  <ScrollLink
-                    to="earn"
-                    smooth={true}
-                    duration={500}
-                    className="fredoka teal"
-                    offset={96}
-                  >
-                    Rewards
-                  </ScrollLink>
-                </li>
-                <li className="whitespace-no-wrap my-1 cursor-pointer nav-item-hover">
-                  <ScrollLink
-                    to="partner"
-                    smooth={true}
-                    duration={500}
-                    className="fredoka teal"
-                    offset={96}
-                  >
-                    Partner
-                  </ScrollLink>
-                </li>
-                <li className="whitespace-no-wrap mt-1 cursor-pointer nav-item-hover">
-                  <ScrollLink
-                    to="talk"
-                    smooth={true}
-                    duration={500}
-                    className="fredoka teal"
-                    offset={96}
-                  >
-                    Talk To Us
-                  </ScrollLink>
-                </li>
-              </ul>
-            )}
-          </div>
-        </div>
-        <div className="hidden lg:flex">
-          <ul className="flex self-center text-center text-xl">
-            <li className="lowercase fredoka teal mr-2 nav-item-hover">
-              <ScrollLink
-                to="learn"
-                smooth={true}
-                duration={500}
-                className="fredoka cursor-pointer"
-                offset={96}
-              >
-                Learn
-              </ScrollLink>
-            </li>
-            <li className="lowercase fredoka teal mx-2 nav-item-hover">
+    const featuresLink = () => {
+        if (typeof window !== "undefined") {
+            return window.location.pathname === "/" ?
               <ScrollLink
                 to="features"
                 smooth={true}
                 duration={500}
-                className="fredoka cursor-pointer"
+                className={styles.hamburgerMenuItem}
                 offset={96}
+                onClick={() => this.toggleNav()}
               >
                 Features
               </ScrollLink>
-            </li>
-            <li className="lowercase fredoka teal mx-2 nav-item-hover">
-              <ScrollLink
-                to="earn"
-                smooth={true}
-                duration={500}
-                className="fredoka cursor-pointer"
-                offset={96}
-              >
+            :
+              <Link to="/" className={styles.hamburgerMenuItem}>
+                Features
+              </Link>
+        }
+        return
+    }
+    return (
+      <div className={styles.nav}>
+        <div className={styles.navLeft}>
+          <Logo className={styles.logo}/>
+        </div>
+        <div
+          className={styles.hamburgerContainer}
+        >
+          <FaBars className={styles.hamburger} style={ navOpen ? { display: "none" } : {} } onClick={() => this.toggleNav()} />
+          <FaRegWindowClose className={styles.hamburgerClose} style={ navOpen ? {} : { display: "none" } } onClick={() => this.toggleNav()} />
+          <div className={styles.darkenBackground} style={ navOpen ? {} : { display: "none" } } />
+          <div className={styles.hamburgerMenu} style={ navOpen ? {} : { display: "none" } } >
+            <div className={styles.hamburgerMenuItemContainer}>
+            { featuresLink() }
+            </div>
+            <div className={styles.hamburgerMenuItemContainer}>
+              <Link to="/earn" className={styles.hamburgerMenuItem}>
                 Rewards
-              </ScrollLink>
-            </li>
-            <li className="lowercase fredoka teal mx-2 nav-item-hover">
-              <ScrollLink
-                to="partner"
-                smooth={true}
-                duration={500}
-                className="fredoka cursor-pointer"
-                offset={96}
-              >
-                Partner
-              </ScrollLink>
-            </li>
-            <li className="lowercase fredoka teal ml-2 nav-item-hover">
-              <ScrollLink
-                to="talk"
-                smooth={true}
-                duration={500}
-                className="fredoka cursor-pointer"
-                offset={96}
-              >
-                Talk
-              </ScrollLink>
-            </li>
-          </ul>
+              </Link>
+            </div>
+            <div className={styles.hamburgerMenuItemContainer}>
+              <Link to="/contact" className={styles.hamburgerMenuItem}>
+                Contact
+              </Link>
+            </div>
+            <div className={`${styles.hamburgerMenuItemContainer} ${styles.followUsContainer}`}>
+              <div className={styles.hamburgerMenuItem}>Follow Us</div>
+              <div className={styles.socialLinksContainer}>
+                <a
+                  href="https://www.facebook.com/navisaviapp/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialLink}
+                >
+                  <FaFacebook className={styles.socialLinkIcon} />
+                </a>
+                <a
+                  href="https://www.instagram.com/navisavi_official/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialLink}
+                >
+                  <FaInstagram className={styles.socialLinkIcon} />
+                </a>
+                <a
+                  href="https://twitter.com/navisaviapp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialLink}
+                >
+                  <FaTwitter className={styles.socialLinkIcon} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/navi-savi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialLink}
+                >
+                  <FaLinkedin className={styles.socialLinkIcon} />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.navRight}>
+          <div className={styles.navItem}>
+            <ScrollLink
+              to="features"
+              smooth={true}
+              duration={500}
+              className={styles.navLink}
+              offset={96}
+            >
+              Features
+            </ScrollLink>
+          </div>
+          <div className={styles.navItem}>
+            <Link to="/earn" className={styles.navLink}>
+              Rewards
+            </Link>
+          </div>
+          <div className={styles.navItem}>
+            <Link to="/contact" className={styles.navLink}>
+              Contact
+            </Link>
+          </div>
         </div>
       </div>
     )

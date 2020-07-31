@@ -1,0 +1,133 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    background-color: var(--dark-blue);
+    padding: 24px 0;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -40px;
+    padding: 50px;
+}
+
+.logo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150px;
+    width: 150px;
+    margin-top: -28px;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+}
+
+.copyright > div {
+    font-size: 16px;
+}
+
+.footerAllLinksContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.footerAllLinksContainer > div {
+    padding: 50px;
+}
+
+.footerLinkContainer {
+    margin-bottom: 7px;
+}
+
+.footerLink {
+    color: white;
+    text-decoration: none;
+}
+
+.footerLink:hover {
+    text-decoration: underline;
+}
+
+.followUsContainer {
+    padding: 50px;
+}
+
+.followUsText {
+    color: white;
+    margin-bottom: 8px;
+    font-family: "SofiaPro-Bold", sans-serif;
+}
+
+.socialLinksContainer {
+    padding: 8px 0;
+    margin-left: -3px;
+}
+
+.socialLink {
+    padding: 0 4px;
+}
+
+.socialLinkIcon {
+    border-radius: 100px;
+    padding: 6px;
+    border: 1px var(--pink) solid;
+
+    background-color: var(--pink);
+    font-size: 14px;
+    color: white;
+
+    transition: all 0.17s ease;
+}
+
+.socialLinkIcon:hover {
+    border-color: white;
+}
+
+@media screen and (max-width: 1045px) {
+    .footerAllLinksContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 50px;
+    }
+
+    .footerAllLinksContainer > div {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 845px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        background-color: var(--dark-blue);
+        padding: 50px 0 28px 0;
+    }
+
+    .container > div {
+        padding: 25px 40px;
+    }
+
+    .logoContainer {
+        margin-left: -6px;
+    }
+}

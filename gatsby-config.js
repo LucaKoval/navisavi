@@ -30,9 +30,15 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `fonts`,
+        path: `${__dirname}/src/fonts`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-postcss`,
     `gatsby-plugin-favicon`,
     `gatsby-transformer-remark`,
     {
@@ -84,7 +90,9 @@ module.exports = {
         precachePages: [
           `/404/`,
           `/about/`,
+          `/contact/`,
           `/careers/`,
+          `/earn/`,
           `/privacy-policy/`,
           `/terms-of-service/`,
         ],

@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.postContainer {
+    overflow: hidden;
+}
+
+.link {
+    position: relative;
+}
+
+.image {
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+}
+
+.caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgba(256, 256, 256, 0%);
+    background-color: rgba(0, 0, 0, 0%);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.10s ease;
+}
+
+.link:hover > .caption {
+    color: white;
+    background-color: rgba(0, 0, 0, 80%);
+}

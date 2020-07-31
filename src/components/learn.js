@@ -1,43 +1,39 @@
 import React from "react"
 import { FaBan, FaCheck } from "react-icons/fa"
+import styles from "../styles/Learn.module.css"
 
 const Learn = () => {
-  return (
-    <div className="py-24 px-6" id="learn">
-      <h2 className="text-center text-5xl teal lowercase">Learn</h2>
-      <h5 className="text-gray-700 text-2xl text-gray-700 text-center">
-        Feel The Learn.
-      </h5>
-      <div className="max-w-2xl mx-auto py-6">
-        <div className="iframe-container">
-          <iframe
-            title="Navi Savi Promo"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/rbK4jrWYEPc"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="rounded-lg"
-          ></iframe>
+    return (
+        <div className={styles.container} id="learn">
+            <div className={styles.title}>Learn</div>
+            <div className={styles.sizzleContainer}>
+                <iframe
+                    title="Navi Savi Promo"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/rbK4jrWYEPc"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className={styles.sizzleVideo}
+                />
+            </div>
+            <div className={styles.infoContainer}>
+                <div className={styles.shortPointsContainer}>
+                    <FaBan className={styles.faBan}/>
+                    <div className={styles.shortPointText}>No Photos.</div>
+                    <FaBan className={styles.faBan} />
+                    <div className={styles.shortPointText}>No Reviews.</div>
+                    <FaCheck className={styles.faBan} />
+                    <div className={styles.shortPointText}>Just Videos.</div>
+                </div>
+                <div className="">
+                    Videos uploaded by travelers, locals, and friends for travel rewards.
+                    Now you can search, save, and share, all in one app.
+                </div>
+            </div>
         </div>
-      </div>
-      <div className="flex flex-col justify-center">
-        <div className="flex flex-col lg:flex-row self-center text-2xl">
-          <FaBan className="self-center accent mx-2" />
-          <h5 className="text-gray-700">No Photos.</h5>
-          <FaBan className="self-center accent mx-2" />
-          <h5 className="text-gray-700">No Reviews.</h5>
-          <FaCheck className="self-center accent mx-2" />
-          <h5 className="text-gray-700">Just Videos.</h5>
-        </div>
-        <p className="self-center text-center text-md text-gray-600">
-          Videos uploaded by travelers, locals, and friends for travel rewards.
-          Now you can search, save, and share, all in one app.
-        </p>
-      </div>
-    </div>
-  )
+    )
 }
 
 export default Learn

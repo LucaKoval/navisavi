@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import BlogPost from "./blogPost"
+import styles from "../styles/Blog.module.css"
 
 const getBlogPosts = graphql`
   {
@@ -32,20 +33,18 @@ const getBlogPosts = graphql`
 `
 
 export default () => {
-  return (
-    <div className="px-6">
-      <StaticQuery
-        query={getBlogPosts}
-        render={data => {
-          return (
-            <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 my-12">
-              {data.blogPosts.edges.map(({ node: blogPost }) => {
-                return <BlogPost key={blogPost.id} blogPost={blogPost} />
-              })}
-            </div>
-          )
-        }}
-      />
-    </div>
-  )
+    return (
+        <div className={styles.outsidePostsContainer}>
+            <StaticQuery
+                query={getBlogPosts}
+                render={data => (
+                    <div className={styles.postsContainer}>
+                        {data.blogPosts.edges.map(({ node: blogPost }) => (
+                            <BlogPost key={blogPost.id} blogPost={blogPost} />
+                        ))}
+                    </div>
+                )}
+            />
+        </div>
+    )
 }
