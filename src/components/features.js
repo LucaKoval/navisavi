@@ -1,8 +1,8 @@
 import React from "react"
 import { FaSearch, FaVideo, FaGraduationCap, FaPlaneDeparture } from "react-icons/fa"
-import FeatureLeftImage from "./features/FeatureLeftImage"
-import FeatureRightImage from "./features/FeatureRightImage"
-import EarnLink from "./EarnLink"
+import FeatureLeftImage from "./features/featureLeftImage"
+import FeatureRightImage from "./features/featureRightImage"
+import EarnLink from "./earnLink"
 import styles from "../styles/Features.module.css"
 
 const Features = () => {
