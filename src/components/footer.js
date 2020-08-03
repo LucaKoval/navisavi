@@ -61,8 +61,8 @@ const Footer = () => {
                             </Link>
                         </div>
                         <div className={styles.footerLinkContainer}>
-                            <a href="mailto:contact@navisaviapp.com" className={styles.footerLink}>
-                                contact@navisaviapp.com
+                            <a href="mailto:contact@navi-savi.com" className={styles.footerLink}>
+                                contact@navi-savi.com
                             </a>
                         </div>
                     </div>
