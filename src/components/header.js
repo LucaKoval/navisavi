@@ -10,7 +10,16 @@ import styles from "../styles/Header.module.css"
 export const Logo = () => {
   const data = useStaticQuery(graphql`
     {
-      logo: file(relativePath: { eq: "logo-and-name.png" }) {
+      logoAndName: file(relativePath: { eq: "logo-and-name.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            src
+            srcSet
+            ...GatsbyImageSharpFluid_noBase64
+          }
+        }
+      }
+      logo: file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             src
@@ -23,7 +32,7 @@ export const Logo = () => {
   `)
   return (
     <Link to="/" className="">
-      <Img fluid={data.logo.childImageSharp.fluid} style={{ width: "200px" }} />
+      <Img fluid={data.logoAndName.childImageSharp.fluid} style={{ width: "200px" }} />
     </Link>
   )
 }
