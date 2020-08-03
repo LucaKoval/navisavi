@@ -25,3 +25,43 @@
 .subtitle {
     color: var(--light-grey);
 }
+
+.tableContainer {
+    width: 38%;
+    padding: 0 60px;
+}
+
+.jobRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+.jobTitleLink {
+    position: relative;
+    text-decoration: none;
+}
+
+.jobTitleLink:hover {
+    text-decoration: underline;
+}
+
+.subInfoContainer {
+    font-size: 16px;
+    color: var(--dark-grey);
+}
+
+@media screen and (max-width: 860px) {
+    .tableContainer {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tableContainer {
+        width: 70%;
+    }
+}
+
