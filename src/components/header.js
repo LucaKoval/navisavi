@@ -58,9 +58,9 @@ export default class Header extends Component {
   }
 
   render() {
-    if (typeof document !== "undefined") document.body.style.overflow = this.state.navOpen ? "hidden" : "scroll";
+    if (typeof document !== "undefined") document.body.style.overflow = this.state.navOpen ? "hidden" : "scroll"
     const { navOpen } = this.state
-    const featuresLink = () => {
+    const featuresLinkHamburger = () => {
         if (typeof window !== "undefined") {
             return window.location.pathname === "/" ?
               <ScrollLink
@@ -80,6 +80,25 @@ export default class Header extends Component {
         }
         return
     }
+    const featuresLink = () => {
+        if (typeof window !== "undefined") {
+            return window.location.pathname === "/" ?
+              <ScrollLink
+              	to="features"
+              	smooth={true}
+              	duration={500}
+              	className={styles.navLink}
+              	offset={96}
+              >
+              	Features
+              </ScrollLink>
+            :
+              <Link to="/" className={styles.navLink}>
+                Features
+              </Link>
+        }
+        return
+    }
     return (
       <div className={styles.nav}>
         <div className={styles.navLeft}>
@@ -93,7 +112,7 @@ export default class Header extends Component {
           <div className={styles.darkenBackground} style={ navOpen ? {} : { display: "none" } } />
           <div className={styles.hamburgerMenu} style={ navOpen ? {} : { display: "none" } } >
             <div className={styles.hamburgerMenuItemContainer}>
-            { featuresLink() }
+            	{ featuresLinkHamburger() }
             </div>
             <div className={styles.hamburgerMenuItemContainer}>
               <Link to="/earn" className={styles.hamburgerMenuItem}>
@@ -146,15 +165,7 @@ export default class Header extends Component {
         </div>
         <div className={styles.navRight}>
           <div className={styles.navItem}>
-            <ScrollLink
-              to="features"
-              smooth={true}
-              duration={500}
-              className={styles.navLink}
-              offset={96}
-            >
-              Features
-            </ScrollLink>
+            { featuresLink() }
           </div>
           <div className={styles.navItem}>
             <Link to="/earn" className={styles.navLink}>

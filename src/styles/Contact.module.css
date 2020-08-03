@@ -90,7 +90,7 @@ textarea:focus {
     width: 120px;
     height: 60px;
     outline: none;
-    padding: 0;
+    padding-bottom: 2px;
     color: white;
     background-color: var(--pink);
     cursor: pointer;
