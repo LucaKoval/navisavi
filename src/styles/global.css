@@ -17,6 +17,13 @@
     font-family: "SofiaPro-Regular", sans-serif;
     font-size: 20px;
     /*line-height: 30px;*/
+    -webkit-appearance: none;
+   	-moz-appearance: none;
+   	appearance: none;
+}
+
+html {
+  	scroll-behavior: smooth;
 }
 
 body {

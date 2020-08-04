@@ -12,7 +12,61 @@
 }
 
 .navLeft {
-    padding: 0px 32px;
+    padding-left: 32px;
+}
+
+.middleDownloadButtonContainer {
+	padding-top: 2px;
+}
+
+.middleDownloadButton {
+    position: relative;
+    border-radius: 4px;
+    background-color: var(--pink);
+    padding: 10px 18px;
+    padding-top: 8px;
+    transition: all 0.10s ease;
+    z-index: 1;
+}
+
+.rightDownloadButtonContainer {
+	/*margin-top: -20px;*/
+	position: relative;
+	top: -13.4px;
+}
+
+.rightDownloadButton {
+    position: relative;
+    border-radius: 4px;
+    background-color: var(--pink);
+    padding: 16px 28px;
+    padding-top: 15px;
+    transition: all 0.10s ease;
+    z-index: 1;
+}
+
+.middleDownloadButton:hover, .rightDownloadButton:hover {
+    transform: translateY(-3px);
+}
+
+.middleDownloadButton:active, .rightDownloadButton:active {
+    transform: translateY(0px);
+    background-color: var(--dark-pink);
+}
+
+.buttonText {
+    color: white;
+    font-family: "SofiaPro-Bold", sans-serif;
+    text-decoration: none;
+}
+
+.buttonShadow {
+    position: relative;
+    top: -10px;
+    width: 100%;
+    height: 10px;
+    background-color: var(--dark-pink);
+    border-radius: 4px;
 }
 
 .logo {
@@ -114,6 +168,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    position: relative;
+    top: 8px;
     padding-right: 14px;
 }
 
