@@ -32,11 +32,11 @@ export const Logo = (hamburger) => {
   	`)
   	return hamburger.hamburger ?
     	<Link to="/" className="">
-      		<Img fluid={data.logo.childImageSharp.fluid} style={{ width: "62px", marginTop: -7, marginLeft: -4 }} />
+      		<Img fluid={data.logo.childImageSharp.fluid} style={{ width: "62px", marginTop: -7, marginLeft: 14 }} />
     	</Link>
     :
     	<Link to="/" className="">
-      		<Img fluid={data.logoAndName.childImageSharp.fluid} style={{ width: "200px", marginTop: -26, marginLeft: 2 }} />
+      		<Img fluid={data.logoAndName.childImageSharp.fluid} style={{ width: "200px", marginTop: -26, marginLeft: 18 }} />
     	</Link>
 }
 

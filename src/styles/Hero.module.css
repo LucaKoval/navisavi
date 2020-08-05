@@ -261,6 +261,12 @@
     }
 }
 
+@media screen and (max-height: 900px) and (min-width: 1025px) {
+	.container {
+        height: 900px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .container {
         flex-direction: column;
@@ -299,16 +305,6 @@
     .video {
         width: auto;
         height: 42%;
-    }
-}
-
-@media screen and (max-height: 900px) and (max-width: 1024px) {
-    .container {
-        height: 900px;
-    }
-
-    .tagline > div {
-        font-size: 70px;
     }
 }
 
