@@ -61,48 +61,46 @@ const Contact = () => {
                         </div>
                     </form>
                     <div className={styles.contactInfoContainer}>
-                        <div className={styles.contactInfoContentContainer}>
-                            <div className={styles.contactTitle}>Contact Info</div>
-                            <div className={styles.contactLabel}>Address</div>
-                            <div className={styles.contactValue}>P.O. Box 151, Oxford, NE 68967</div>
-                            <div className={styles.contactLabel}>Phone</div>
-                            <div className={styles.contactValue}>1-801-557-7985</div>
-                            <div className={styles.contactLabel}>Email</div>
-                            <div className={styles.contactValue}>contact@navisaviapp.com</div>
-                            <div className={styles.socialLinksContainer}>
-                                <a
-                                    href="https://www.facebook.com/navisaviapp/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className={styles.socialLink}
-                                >
-                                    <FaFacebook className={styles.socialLinkIcon} />
-                                </a>
-                                <a
-                                    href="https://www.instagram.com/navisavi_official/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className={styles.socialLink}
-                                >
-                                    <FaInstagram className={styles.socialLinkIcon} />
-                                </a>
-                                <a
-                                    href="https://twitter.com/navisaviapp"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className={styles.socialLink}
-                                >
-                                    <FaTwitter className={styles.socialLinkIcon} />
-                                </a>
-                                <a
-                                    href="https://www.linkedin.com/company/navi-savi/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className={styles.socialLink}
-                                >
-                                    <FaLinkedin className={styles.socialLinkIcon} />
-                                </a>
-                            </div>
+                        <div className={styles.contactTitle}>Contact Info</div>
+                        <div className={styles.contactLabel}>Address</div>
+                        <div className={styles.contactValue}>P.O. Box 151, Oxford, NE 68967</div>
+                        <div className={styles.contactLabel}>Phone</div>
+                        <div className={styles.contactValue}>1-801-557-7985</div>
+                        <div className={styles.contactLabel}>Email</div>
+                        <div className={styles.contactValue}>contact@navisaviapp.com</div>
+                        <div className={styles.socialLinksContainer}>
+                            <a
+                                href="https://www.facebook.com/navisaviapp/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.socialLink}
+                            >
+                                <FaFacebook className={styles.socialLinkIcon} />
+                            </a>
+                            <a
+                                href="https://www.instagram.com/navisavi_official/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.socialLink}
+                            >
+                                <FaInstagram className={styles.socialLinkIcon} />
+                            </a>
+                            <a
+                                href="https://twitter.com/navisaviapp"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.socialLink}
+                            >
+                                <FaTwitter className={styles.socialLinkIcon} />
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/company/navi-savi/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.socialLink}
+                            >
+                                <FaLinkedin className={styles.socialLinkIcon} />
+                            </a>
                         </div>
                     </div>
                 </div>

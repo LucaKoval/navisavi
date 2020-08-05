@@ -32,11 +32,11 @@ export const Logo = (hamburger) => {
   	`)
   	return hamburger.hamburger ?
     	<Link to="/" className="">
-      		<Img fluid={data.logo.childImageSharp.fluid} style={{ width: "62px", marginTop: -7, marginLeft: 14 }} />
+      		<Img fluid={data.logo.childImageSharp.fluid} style={{ width: "62px", marginTop: -7, marginLeft: -6 }} />
     	</Link>
     :
     	<Link to="/" className="">
-      		<Img fluid={data.logoAndName.childImageSharp.fluid} style={{ width: "200px", marginTop: -26, marginLeft: 18 }} />
+      		<Img fluid={data.logoAndName.childImageSharp.fluid} style={{ width: "200px", marginTop: -26, marginLeft: 4 }} />
     	</Link>
 }
 
@@ -88,23 +88,23 @@ export default class Header extends Component {
   	render() {
 	    if (typeof document !== "undefined") document.body.style.overflow = this.state.navOpen ? "hidden" : "scroll"
 	    const { navOpen } = this.state
+		const displayDownloadButton = () => {
+			if (typeof window !== "undefined") console.log('yerr'); return window.location.pathname !== "/"
+			return false
+		}
 	    return (
 	    	<div className={styles.nav}>
 		    	<div className={styles.navLeft}>
 		    		<Logo className={styles.logo} hamburger={this.state.hamburger}/>
 		    	</div>
-		    	<div className={styles.middleDownloadButtonContainer} style={ this.state.hamburger ? {} : { display: "none" } }>
-		    		<div className={styles.middleDownloadButton}>
-						<ScrollLink
-			              	to="signup"
-			              	duration={500}
-			              	className={styles.buttonText}
-			            >
-		              		Sign Up
-		              	</ScrollLink>
-	                </div>
-	                <div className={styles.buttonShadow} />
-		    	</div>
+		    	{ displayDownloadButton() && (
+			    	<div className={styles.middleDownloadButtonContainer} style={ this.state.hamburger ? {} : { display: "none" } }>
+			    		<div className={styles.middleDownloadButton}>
+							<Link to="/" className={styles.buttonText}>Sign Up</Link>
+		                </div>
+		                <div className={styles.buttonShadow} />
+			    	</div>
+			    )}
 		    	<div className={styles.hamburgerContainer}>
 			    	<FaBars className={styles.hamburger} style={ navOpen ? { display: "none" } : {} } onClick={() => this.toggleNav()} />
 			    	<FaRegWindowClose className={styles.hamburgerClose} style={ navOpen ? {} : { display: "none" } } onClick={() => this.toggleNav()} />
@@ -176,18 +176,14 @@ export default class Header extends Component {
 				    		Contact
 				    	</Link>
 			    	</div>
-			    	<div className={styles.rightDownloadButtonContainer} style={ this.state.hamburger ? { display: "none" } : {} }>
-			    		<div className={styles.rightDownloadButton}>
-							<ScrollLink
-				              	to="signup"
-				              	duration={500}
-				              	className={styles.buttonText}
-				              >
-			              		Sign Up
-			              	</ScrollLink>
-		                </div>
-		                <div className={styles.buttonShadow} />
-			    	</div>
+			    	{ displayDownloadButton() && (
+				    	<div className={styles.rightDownloadButtonContainer} style={ this.state.hamburger ? { display: "none" } : {} }>
+				    		<div className={styles.rightDownloadButton}>
+								<Link to="/" className={styles.buttonText}>Sign Up</Link>
+			                </div>
+			                <div className={styles.buttonShadow} />
+				    	</div>
+				    )}
 		    	</div>
 	    	</div>
 	    )

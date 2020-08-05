@@ -4,7 +4,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .title {
@@ -19,16 +19,18 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 80%;
     border: 1px #ebeff2 solid;
     border-radius: 4px;
     overflow: hidden;
+    background-color: #ebeff2;
 }
 
 .form {
     flex: 1;
     padding: 34px 40px;
+    background-color: white;
 }
 
 .inputLabel {
@@ -121,21 +123,14 @@ textarea:focus {
 }
 
 .contactInfoContainer {
-    height: 100%;
-    flex: 1;
-    padding: 34px 40px;
-    background-color: #ebeff2;
-}
-
-.contactInfoContentContainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     height: 100%;
     width: 100%;
-    background-color: #ebeff2;
-    padding-top: 34px;
+    flex: 1;
+    padding: 34px 40px;
 }
 
 .contactTitle {
@@ -196,7 +191,6 @@ textarea:focus {
 
 @media screen and (max-width: 760px) {
     .container {
-        height: 100%;
         padding-top: 110px;
         padding-bottom: 75px;
         justify-content: flex-start;
@@ -236,5 +230,11 @@ textarea:focus {
 @media screen and (max-width: 500px) {
     .title {
         font-size: 30px;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .container {
+        min-height: 900px;
     }
 }
