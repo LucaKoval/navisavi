@@ -18,19 +18,19 @@ const Features = () => {
                 imageNum={2}
                 icon={<FaVideo className={styles.icon} />}
                 mainText="Browse Videos By Other Travelers"
-                subText="Watch unedited, short clips of friends, influencers, or other travelers' vacations."
+                subText="Watch short, unedited clips of friends, influencers, and other travelers' vacations."
             />
             <FeatureLeftImage
                 imageNum={3}
                 icon={<FaGraduationCap className={styles.icon} />}
-                mainText="Learn More About An Experience"
+                mainText="Learn More About Each Location"
                 subText="Location information is verified by NaviSavi or the business."
             />
             <FeatureRightImage
                 imageNum={4}
                 icon={<FaPlaneDeparture className={styles.icon} />}
                 mainText="Save Clips, Plan Trips"
-                subText="Build, share, and book a video itinerary of your next vacation."
+                subText="Build, share, and book a video itinerary for your next vacation."
             />
         </div>
     )

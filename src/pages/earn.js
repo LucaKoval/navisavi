@@ -39,10 +39,10 @@ const Earn = () => {
             <div className={styles.container}>
                 <div className={styles.title}>Rewards</div>
                 <div className={styles.contentContainer}>
-                    <div className={styles.imageContainer}>
+                    <div className={styles.imageContainer} style={{ width: dim, height: dim }}>
                         <BackgroundImage
                             fluid={data.logo.childImageSharp.fluid}
-                            className={styles.logo}
+                            className={styles.image}
                             style={{ width: dim, height: dim }}
                         />
                     </div>
@@ -51,20 +51,19 @@ const Earn = () => {
                                 <div className="">
                                     <div className={styles.firstLine}>Wanna Be A VIP?</div>
                                     <div className={styles.explanation}>
-                                        NaviSavi is looking for travelers, influencers, and well,
-                                        anyone with great short videos of their recent travels. Be one
-                                        of the first on the app to get discovered, share your
-                                        itineraries, and get rewarded for being one of our trusted
-                                        travelers trying out NaviSavi.
+                                        NaviSavi is looking for travelers, influencers, and, well,
+                                        anyone with great short videos of their travels. Be one
+                                        of the first on the app to get discovered, build
+                                        itineraries, and earn rewards for being a trusted NaviSavi traveler.
                                     </div>
                                 </div>
                             </div>
                             <div className={styles.pointContainer}>
                                 <div className="">
                                     <div className={styles.firstLine}>Rewards</div>
-                                    <div className={styles.explanation}>We are looking for content to launch NaviSavi! For every
+                                    <div className={styles.explanation}>We are looking for content to launch NaviSavi. For every
                                         approved video uploaded before we launch, we help you fund
-                                        your next travels! Upload videos, or start shooting new ones
+                                        your next travels! Upload your old videos, or start shooting new ones
                                         now!
                                     </div>
                                 </div>
@@ -73,9 +72,8 @@ const Earn = () => {
                                 <div className="">
                                     <div className={styles.firstLine}>Want NaviSavi In Your City?</div>
                                     <div className={styles.explanation}>
-                                        Be a part of our street teams who capture content of your
-                                        city, create itineraries of your favorite “hot spots” and
-                                        promote NaviSavi to tourists visiting your town.
+                                        Become a member of your hometown's NaviSavi street team that creates video content, informs
+                                        us of local hotspots, and promotes our app to tourists.
                                     </div>
                                 </div>
                             </div>

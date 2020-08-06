@@ -7,7 +7,9 @@ import { FaBars, FaRegWindowClose, FaFacebook, FaInstagram, FaLinkedin, FaTwitte
 import { Link } from "gatsby"
 import styles from "../styles/Header.module.css"
 
-export const Logo = (hamburger) => {
+export const Logo = (props) => {
+	console.log(props.displayDownloadButton)
+	console.log(props)
   	const data = useStaticQuery(graphql`
     	{
 	      	logoAndName: file(relativePath: { eq: "logo-and-name.png" }) {
@@ -30,13 +32,13 @@ export const Logo = (hamburger) => {
 	      	}
     	}
   	`)
-  	return hamburger.hamburger ?
-    	<Link to="/" className="">
-      		<Img fluid={data.logo.childImageSharp.fluid} style={{ width: "62px", marginTop: -7, marginLeft: -6 }} />
+  	return props.hamburger ?
+    	<Link to="/">
+      		<Img fluid={data.logo.childImageSharp.fluid}  style={{ width: "62px", marginTop: -7, marginLeft: -6 }} />
     	</Link>
     :
-    	<Link to="/" className="">
-      		<Img fluid={data.logoAndName.childImageSharp.fluid} style={{ width: "200px", marginTop: -26, marginLeft: 4 }} />
+    	<Link to="/">
+      		<Img fluid={data.logoAndName.childImageSharp.fluid} className={styles.logoAndNameImg} style={props.displayDownloadButton ? { marginTop: -26 } : { marginTop: 0 }} />
     	</Link>
 }
 
@@ -95,7 +97,7 @@ export default class Header extends Component {
 	    return (
 	    	<div className={styles.nav}>
 		    	<div className={styles.navLeft}>
-		    		<Logo className={styles.logo} hamburger={this.state.hamburger}/>
+		    		<Logo className={styles.logo} hamburger={this.state.hamburger} displayDownloadButton={displayDownloadButton()} />
 		    	</div>
 		    	{ displayDownloadButton() && (
 			    	<div className={styles.middleDownloadButtonContainer} style={ this.state.hamburger ? {} : { display: "none" } }>

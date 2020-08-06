@@ -45,6 +45,7 @@
 .tagline > div {
     font-size: 83px;
     font-family: "SofiaPro-Bold", sans-serif;
+    padding-bottom: 5px;
 }
 
 .subTagline {
@@ -56,12 +57,17 @@
 }
 
 .subTagline > div {
-    font-size: 28px;
-    font-family: "SofiaPro-Regular", sans-serif;
     color: var(--light-grey);
 }
 
+.firstSubTagline {
+	margin-bottom: 3px;
+	font-size: 30px;
+    font-family: "SofiaPro-Bold", sans-serif;
+}
+
 .lastSubTagline {
+	font-size: 28px;
     margin-bottom: 50px;
 }
 

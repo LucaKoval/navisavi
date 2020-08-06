@@ -73,6 +73,11 @@
     padding: 10px;
 }
 
+.logoAndNameImg {
+ 	width: 200px;
+ 	margin-left: 4px;
+}
+
 .hamburgerContainer {
     display: none;
 }

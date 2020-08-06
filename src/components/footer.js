@@ -27,7 +27,7 @@ const Footer = () => {
                         />
                     </Link>
                     <div className={styles.copyright}>
-                        <div>&copy; {new Date().getFullYear()} Navi Savi,</div>
+                        <div>&copy; {new Date().getFullYear()} NaviSavi,</div>
                         <div>All Rights Reserved{" "}</div>
                     </div>
                 </div>
