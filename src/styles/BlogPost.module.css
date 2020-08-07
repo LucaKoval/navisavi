@@ -1,0 +1,83 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	min-height: 900px;
+	padding-top: 130px;
+	padding-bottom: 130px;
+}
+
+.contentContainer {
+	max-width: 750px;
+}
+
+.contentContainer * {
+	color: var(--dark-grey);
+}
+
+.infoContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.title {
+	font-size: 53px;
+	font-family: "SofiaPro-Bold", sans-serif;
+}
+
+.details {
+	font-size: 16px;
+	color: var(--light-grey);
+}
+
+.author {
+	font-size: 16px;
+	color: var(--dark-grey);
+}
+
+.bodyContainer > h1,
+.bodyContainer > h2,
+.bodyContainer > h3,
+.bodyContainer > h4,
+.bodyContainer > h5,
+.bodyContainer > h6 {
+	font-size: 22px;
+}
+
+.bodyContainer > h1 + p,
+.bodyContainer > h2 + p,
+.bodyContainer > h3 + p,
+.bodyContainer > h4 + p,
+.bodyContainer > h5 + p,
+.bodyContainer > h6 + p {
+	margin-top: 20px;
+}
+
+.bodyContainer > p {
+	margin: 20px 0;
+}
+
+@media screen and (max-width: 900px) {
+    .contentContainer {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .contentContainer {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .contentContainer {
+        max-width: 360px;
+    }
+}
+

@@ -8,8 +8,6 @@ import { Link } from "gatsby"
 import styles from "../styles/Header.module.css"
 
 export const Logo = (props) => {
-	console.log(props.displayDownloadButton)
-	console.log(props)
   	const data = useStaticQuery(graphql`
     	{
 	      	logoAndName: file(relativePath: { eq: "logo-and-name.png" }) {

@@ -5,8 +5,9 @@ import { FaUserCircle, FaAngleRight } from "react-icons/fa"
 import styles from "../styles/Blog.module.css"
 
 export default ({ blogPost }) => {
+	console.log(blogPost)
     return (
-        <Link to={`blog/${blogPost.slug}`} className={styles.overallLink}>
+        <Link to={blogPost.slug} className={styles.overallLink}>
             <div className={styles.contentContainer}>
                 <div className="">
                     <Img
@@ -16,17 +17,15 @@ export default ({ blogPost }) => {
                 </div>
                 <div className={styles.textContainer}>
                     <div className={styles.postTitle}>{blogPost.title}</div>
-                    <div className={styles.bottomContainer}>
-                        <div className={styles.postInfo}>
-                            <div className="">
-                                <FaUserCircle className="" /> {blogPost.author}
-                            </div>
-                            <div>{blogPost.date}</div>
-                        </div>
-                        <div className={styles.buttonContainer}>
-                            <div className={styles.button}>View Post</div>
-                            <div className={styles.buttonShadow} />
-                        </div>
+                    <div className={styles.postInfo}>
+                         <div className="">
+                             <FaUserCircle className="" /> {blogPost.author}
+                         </div>
+                         <div>{blogPost.date}</div>
+                     </div>
+                    <div className={styles.buttonContainer}>
+                        <div className={styles.button}>View Post</div>
+                        <div className={styles.buttonShadow} />
                     </div>
                 </div>
             </div>
