@@ -41,7 +41,7 @@ const Hero = () => {
                         <div className={styles.subTagline}><div className={styles.lastSubTagline}>Discover destinations, plan itineraries, and upload your travel clips for rewards.</div></div>
                         <div className={styles.signUpContainer} id="signup">
                             <div className={styles.callToAction}>
-                                Sign up now and get <span className={styles.bold}>paid</span> to test our app before the release.
+                                Sign up now and get <span className="bold">paid</span> to test our app before the release.
                             </div>
                             <div className={styles.inputContainer}>
                                 <form
