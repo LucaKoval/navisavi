@@ -1,0 +1,111 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	min-height: 900px;
+	padding-top: 130px;
+	padding-bottom: 130px;
+}
+
+.contentContainer {
+	max-width: 750px;
+}
+
+.contentContainer * {
+	color: var(--dark-grey);
+}
+
+.infoContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.title {
+	font-size: 40px;
+	font-family: "SofiaPro-Bold", sans-serif;
+	margin-bottom: 4px;
+}
+
+.details {
+	font-size: 18px;
+	color: var(--light-grey);
+}
+
+.bodyContainer > div {
+	margin: 24px 0;
+}
+
+li {
+	margin: 4px 0;
+}
+
+li:first-child {
+	margin-top: -6px;
+}
+
+li:last-child  {
+	margin-bottom: 34px;
+}
+
+.buttonContainer {
+    margin-top: 50px;
+    width: fit-content;
+}
+
+.button {
+    position: relative;
+    border-radius: 4px;
+    background-color: var(--pink);
+    padding: 22px 34px;
+    transition: all 0.10s ease;
+    z-index: 1;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.button:active {
+    transform: translateY(0px);
+    background-color: var(--dark-pink);
+}
+
+.buttonText {
+    font-size: 24px;
+    color: white;
+    font-family: "SofiaPro-Bold", sans-serif;
+    text-decoration: none;
+}
+
+.buttonShadow {
+    position: relative;
+    top: -10px;
+    height: 10px;
+    background-color: var(--dark-pink);
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 900px) {
+    .contentContainer {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .contentContainer {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .contentContainer {
+        max-width: 360px;
+    }
+}
+

@@ -3,6 +3,20 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styles from "../styles/Careers.module.css"
 
+const careersInfo = require("../data/careersInfo")
+
+const tagString = tags => {
+	let str = ""
+	tags.forEach((tag, i) => {
+		if (i === tags.length-1) {
+	  		str += tag
+	  	} else {
+	  		str += tag + " | "
+	  	}
+	})
+	return str
+}
+
 const Careers = () => {
     return (
         <Layout>
@@ -20,42 +34,19 @@ const Careers = () => {
                     </div>
                 </div>
                 <div className={styles.tableContainer}>
-                    <div className={styles.jobRow}>
-                        <a
-                            href="mailto:contact@navi-savi.com?subject=Marketing%20And%20Social%20Media%20Intern%20Application"
-                            className={styles.jobTitleLink}
-                        >
-                            Marketing & Social Media Intern
-                        </a>
-                        <div className={styles.subInfoContainer}>New York, NY | Stipend | College Credit</div>
-                    </div>
-                    <div className={styles.jobRow}>
-                        <a
-                            href="mailto:contact@navi-savi.com?subject=Community%20Intern%20Application"
-                            className={styles.jobTitleLink}
-                        >
-                            Community Intern
-                        </a>
-                        <div className={styles.subInfoContainer}>New York, NY | Stipend | College Credit</div>
-                    </div>
-                    <div className={styles.jobRow}>
-                        <a
-                            href="mailto:contact@navi-savi.com?subject=Video%20Content%20Intern%20Application"
-                            className={styles.jobTitleLink}
-                        >
-                            Video Content Intern
-                        </a>
-                        <div className={styles.subInfoContainer}>New York, NY | Stipend | College Credit</div>
-                    </div>
-                    <div className={styles.jobRow}>
-                        <a
-                            href="mailto:contact@navi-savi.com?subject=Community%20And%20Content%20Ambassador%20Application"
-                            className={styles.jobTitleLink}
-                        >
-                            Community & Content Ambassadors
-                        </a>
-                        <div className={styles.subInfoContainer}>Remote (Major Cities, World-wide) | Stipend | College Credit</div>
-                    </div>
+                	{
+                		careersInfo.careers.map(career => 
+                			<div className={styles.jobRow}>
+		                        <a
+		                            href={"/careers/"+career.slug}
+		                            className={styles.jobTitleLink}
+		                        >
+		                            {career.title}
+		                        </a>
+		                        <div className={styles.subInfoContainer}>{tagString(career.tags)}</div>
+		                    </div>
+                		)
+                	}
                 </div>
             </div>
         </Layout>

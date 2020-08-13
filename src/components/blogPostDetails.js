@@ -14,7 +14,7 @@ export default ({ blogPost }) => {
 	          	</div>
 	          	<div
 	            	dangerouslySetInnerHTML={{
-	              	__html: blogPost.body.childMarkdownRemark.html,
+	              		__html: blogPost.body.childMarkdownRemark.html,
 	            	}}
 	            	className={styles.bodyContainer}
 	          	/>
