@@ -12,13 +12,13 @@ const termsOfService = () => {
         </h2>
         <div className="container mx-auto text-gray-600">
           <p>
-            TERMS OF USE Welcome to Navi Savi. The following terms and
+            TERMS OF USE Welcome to NaviSavi. The following terms and
             conditions form a binding agreement between our users (“you” or
             “your”) and us. Please review the following terms carefully. By
             using the Platform, you are agreeing to these terms, and these terms
             will govern your use of the Platform. If you do not agree to these
-            terms, you must cease use of the Platform. The terms “Navi Savi” or
-            “us” or “we” or “our” refer to Navi Savi, Inc., the owner and
+            terms, you must cease use of the Platform. The terms “NaviSavi” or
+            “us” or “we” or “our” refer to NaviSavi, Inc., the owner and
             operator of the Platform. The term “you” refers to the person
             accessing or using the Platform, or the company or organization on
             behalf of which that person accesses the Platform. To make these
@@ -28,12 +28,12 @@ const termsOfService = () => {
           <ol className="list-decimal list-inside terms-list">
             <li className="main-list">INTRODUCTION</li>
             <p>
-              Navi Savi is an online community where travelers can find,
+              NaviSavi is an online community where travelers can find,
               research, and experience new places around the world. Please read
               these Terms of Use carefully because they govern your access to
               and use of the Platform, including any content, information,
               products or services therein. This is a legal agreement between
-              you and Navi Savi and applies to you whether or not you are a
+              you and NaviSavi and applies to you whether or not you are a
               Member.
             </p>
             <p>
@@ -61,7 +61,7 @@ const termsOfService = () => {
               that you are able to form a binding contract in your jurisdiction;
               ( 2 ) Comply with our Terms of Use; ( 3 ) Agree that you will not
               copy or distribute any part of the Platform in any medium without
-              Navi Savi’s prior written authorization, except as permitted
+              NaviSavi’s prior written authorization, except as permitted
               through the Platform’s functionality and under these Terms of Use;
               ( 4 ) Agree that you will provide accurate and complete
               information when creating an account; ( 5 ) Acknowledge that you
@@ -71,7 +71,7 @@ const termsOfService = () => {
               names, physical addresses or e-mail addresses, from the Platform;
               ( 7 ) Acknowledge your sole responsibility for Your Content; ( 8 )
               Represent that you own or have the necessary licenses, rights,
-              permissions, and consent to use and authorize Navi Savi to use all
+              permissions, and consent to use and authorize NaviSavi to use all
               patent, trademark, trade secret, copyright or other proprietary
               rights in and to Your Content to enable inclusion and use of the
               submissions across the Platform; ( 9 ) Grant each user of the
@@ -101,9 +101,9 @@ const termsOfService = () => {
             <p>
               When you register, you will select (or we will issue to you) a
               User ID. Individuals and entities who use the Platform and have
-              previously been terminated by Navi Savi may not register for an
+              previously been terminated by NaviSavi may not register for an
               account and may not be designated by you to use your account on
-              your behalf. You acknowledge and understand that Navi Savi relies
+              your behalf. You acknowledge and understand that NaviSavi relies
               on User IDs to distinguish Members from other users. If someone
               accesses our Platform using your User ID, we will rely on that
               User ID and will assume that you or your representative is
@@ -155,7 +155,7 @@ const termsOfService = () => {
               <li>
                 encourages conduct that would be considered a criminal offense,
                 would give rise to civil liability, would violate any law, or is
-                otherwise inappropriate, as determined by Navi Savi in its sole
+                otherwise inappropriate, as determined by NaviSavi in its sole
                 discretion
               </li>
               <li>is false or inaccurate; or</li>
@@ -311,14 +311,14 @@ const termsOfService = () => {
             </ul>
             <li className="main-list">SECURITY</li>
             <p>
-              Navi Savi will use reasonable efforts to maintain the security and
+              NaviSavi will use reasonable efforts to maintain the security and
               integrity of information you provide to us. However, you
-              acknowledge and agree that Navi Savi cannot fully eliminate
+              acknowledge and agree that NaviSavi cannot fully eliminate
               security risks and cannot guarantee that unauthorized access to
               your information will never occur. You agree that you will keep
-              your user ID and password for your Navi Savi account confidential
+              your user ID and password for your NaviSavi account confidential
               and secure, that you will never share them with another person,
-              and that you will not use a password on Navi Savi that you have
+              and that you will not use a password on NaviSavi that you have
               used on another website.
             </p>
             <li className="main-list">PRIVACY</li>
@@ -370,11 +370,11 @@ const termsOfService = () => {
             <li className="main-list">DISCLAIMERS OF WARRANTY</li>
             <p>
               You agree that your use of the Platform shall be at your sole
-              risk. TO THE FULLEST EXTENT PERMITTED BY LAW, NAVI SAVI AND THE
-              NAVI SAVI AFFILIATES DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED,
+              risk. TO THE FULLEST EXTENT PERMITTED BY LAW, NAVISAVI AND THE
+              NAVISAVI AFFILIATES DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED,
               IN CONNECTION WITH THE WEBSITE AND YOUR USE THEREOF. ACCESS TO
-              THIS SITE IS PROVIDED ON AN “AS IS” BASIS. NEITHER NAVI SAVI NOR
-              ANY OF THE NAVI SAVI AFFILIATES MAKES ANY WARRANTIES OR
+              THIS SITE IS PROVIDED ON AN “AS IS” BASIS. NEITHER NAVISAVI NOR
+              ANY OF THE NAVISAVI AFFILIATES MAKES ANY WARRANTIES OR
               REPRESENTATIONS ABOUT THE ACCURACY OR COMPLETENESS OF THE
               PLATFORM’S CONTENT OR THE CONTENT OF ANY SITES LINKED TO THE
               WEBSITE AND ASSUMES NO LIABILITY OR RESPONSIBILITY FOR ANY ( i )
@@ -389,10 +389,10 @@ const termsOfService = () => {
               ANY ERRORS OR OMISSIONS IN ANY CONTENT OR FOR ANY LOSS OR DAMAGE
               OF ANY KIND INCURRED AS A RESULT OF THE USE OF ANY CONTENT POSTED,
               EMAILED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE
-              PLATFORM. NAVI SAVI DOES NOT WARRANT, ENDORSE, GUARANTEE, OR
+              PLATFORM. NAVISAVI DOES NOT WARRANT, ENDORSE, GUARANTEE, OR
               ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR
               OFFERED BY A THIRD PARTY THROUGH THE PLATFORM OR ANY HYPERLINKED
-              WEBSITE OR FEATURED IN ANY BANNER OR OTHER ADVERTISING. NAVI SAVI
+              WEBSITE OR FEATURED IN ANY BANNER OR OTHER ADVERTISING. NAVISAVI
               WILL NOT BE A PARTY TO OR IN ANY WAY BE RESPONSIBLE FOR MONITORING
               ANY TRANSACTION BETWEEN YOU AND THIRD-PARTY PROVIDERS OF PRODUCTS
               OR SERVICES. AS WITH THE PURCHASE OF A PRODUCT OR SERVICE THROUGH
@@ -401,7 +401,7 @@ const termsOfService = () => {
               LIABLE FOR ANY DAMAGES ARISING FROM THE TRANSACTIONS BETWEEN YOU
               AND USERS, LISTED BUSINESSES, OR SERVICE PROVIDERS FOR ANY
               INFORMATION APPEARING ON PARTNER SITES OR ANY OTHER SITE LINKED TO
-              OUR SITE. IN NO EVENT WILL NAVI SAVI OR ANY NAVI SAVI AFFILIATE BE
+              OUR SITE. IN NO EVENT WILL NAVISAVI OR ANY NAVISAVI AFFILIATE BE
               LIABLE TO YOU OR ANY THIRD PARTY IN CONNECTION WITH ANY ACT OR
               OMISSION OF SUCH A THIRD PARTY. THE FOREGOING DISCLAIMERS SHALL
               APPLY TO THE FULLEST EXTENT PERMITTED BY LAW IN THE APPLICABLE
@@ -412,7 +412,7 @@ const termsOfService = () => {
               YOU ACKNOWLEDGE AND AGREE THAT WE ARE ONLY WILLING TO PROVIDE
               ACCESS TO THE SITE AND TO PROVIDE THE SERVICES IF YOU AGREE TO
               CERTAIN LIMITATIONS OF OUR LIABILITY TO YOU AND TO THIRD PARTIES.
-              IN NO EVENT SHALL NAVI SAVI OR ANY NAVI SAVI AFFILIATE BE LIABLE
+              IN NO EVENT SHALL NAVISAVI OR ANY NAVISAVI AFFILIATE BE LIABLE
               TO YOU FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, OR
               CONSEQUENTIAL DAMAGES WHATSOEVER RESULTING FROM ANY ( i ) ERRORS,
               MISTAKES, OR INACCURACIES OF CONTENT, ( ii ) PERSONAL INJURY OR
@@ -427,17 +427,17 @@ const termsOfService = () => {
               OF ANY KIND INCURRED AS A RESULT OF YOUR USE OF ANY CONTENT
               POSTED, EMAILED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA THE
               PLATFORM, WHETHER BASED ON WARRANTY, CONTRACT, TORT, OR ANY OTHER
-              LEGAL THEORY, AND WHETHER OR NOT NAVI SAVI OR THE APPLICABLE NAVI
+              LEGAL THEORY, AND WHETHER OR NOT NAVISAVI OR THE APPLICABLE NAVI
               SAVI AFFILIATE IS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE
               FOREGOING LIMITATION OF LIABILITY SHALL APPLY TO THE FULLEST
               EXTENT PERMITTED BY LAW IN THE APPLICABLE JURISDICTION. YOU
-              SPECIFICALLY ACKNOWLEDGE THAT NEITHER NAVI SAVI NOR ANY NAVI SAVI
+              SPECIFICALLY ACKNOWLEDGE THAT NEITHER NAVISAVI NOR ANY NAVISAVI
               AFFILIATE SHALL BE LIABLE FOR USER SUBMISSIONS OR THE DEFAMATORY,
               OFFENSIVE, OR ILLEGAL CONDUCT OF ANY THIRD PARTY AND THAT THE RISK
               OF HARM OR DAMAGE FROM THE FOREGOING RESTS ENTIRELY WITH YOU.
             </p>
             <p>
-              TO THE EXTENT THE LAW PERMITS, YOU RELEASE NAVI SAVI AND ALL NAVI
+              TO THE EXTENT THE LAW PERMITS, YOU RELEASE NAVISAVI AND ALL NAVI
               SAVI AFFILIATES FROM ANY CLAIMS OR LIABILITY RELATED TO ANY
               CONTENT POSTED ON THE PLATFORM AND FROM CLAIMS RELATED TO THE
               CONDUCT OF ANY OTHER CUSTOMERS OF OURS. YOU HEREBY WAIVE
@@ -453,20 +453,20 @@ const termsOfService = () => {
               CONNECTION WITH THIS AGREEMENT IS TO DISCONTINUE USING THE SITE
               AND SERVICES. IN THE EVENT THAT A COURT DETERMINES THAT THE
               PRECEDING SENTENCE IS UNENFORCEABLE, THE AGGREGATE LIABILITY OF
-              NAVI SAVI OR ANY NAVI SAVI AFFILIATE TO YOU FOR ALL CLAIMS ARISING
+              NAVISAVI OR ANY NAVISAVI AFFILIATE TO YOU FOR ALL CLAIMS ARISING
               IN CONNECTION WITH THIS AGREEMENT WILL NOT EXCEED THE GREATER OF
               (A) ALL AMOUNTS PAID BY YOU UNDER THIS AGREEMENT WITHIN THE LAST
               TWELVE (12) MONTHS, AND (B) ONE HUNDRED DOLLARS (U.S. $100.00).
               THESE LIMITATIONS OF LIABILITY APPLY REGARDLESS OF THE NATURE OF
               ANY CLAIM, WHETHER BASED ON WARRANTY, CONTRACT, TORT, OR ANY OTHER
-              LEGAL OR EQUITABLE THEORY, AND WHETHER OR NOT NAVI SAVI OR THE
-              APPLICABLE NAVI SAVI AFFILIATE IS ADVISED OF THE POSSIBILITY OF
+              LEGAL OR EQUITABLE THEORY, AND WHETHER OR NOT NAVISAVI OR THE
+              APPLICABLE NAVISAVI AFFILIATE IS ADVISED OF THE POSSIBILITY OF
               SUCH DAMAGES.
             </p>
-            <li className="main-list">YOUR INDEMNIFICATION OF NAVI SAVI</li>
+            <li className="main-list">YOUR INDEMNIFICATION OF NAVISAVI</li>
             <p>
-              You agree to defend, indemnify and hold harmless Navi Savi and all
-              Navi Savi Affiliates from and against any and all claims, damages,
+              You agree to defend, indemnify and hold harmless NaviSavi and all
+              NaviSavi Affiliates from and against any and all claims, damages,
               obligations, losses, liabilities, costs or debt, and expenses
               (including but not limited to attorney’s fees) arising from: (i)
               your use of and access to the Platform; (ii) your violation of any
@@ -482,7 +482,7 @@ const termsOfService = () => {
               You acknowledge and agree that we and our licensors retain
               ownership of all intellectual property rights of any kind related
               to the Platform, including applicable copyrights, trademarks and
-              other proprietary rights. “Navi Savi” is our trademark. Other
+              other proprietary rights. “NaviSavi” is our trademark. Other
               product and company names that are mentioned on the Platform may
               be trademarks of their respective owners. We do not grant any
               license to you relating any of those intellectual property rights
@@ -491,21 +491,21 @@ const termsOfService = () => {
             </p>
             <p>
               Except for user-generated content and LB content, the Content on
-              Navi Savi, excluding all intellectual property of other sites
-              obtained by way of API and linking, are owned by Navi Savi. This
+              NaviSavi, excluding all intellectual property of other sites
+              obtained by way of API and linking, are owned by NaviSavi. This
               includes, without limitation, the text, software, scripts,
               graphics, photos, sounds, interactive features and the trademarks,
               service marks and logos contained therein (“Marks”). These are
-              owned by or licensed to Navi Savi, subject to copyright and other
+              owned by or licensed to NaviSavi, subject to copyright and other
               intellectual property rights under United States and foreign laws
               and international conventions. All Content is provided to you AS
               IS for your information and personal use only and may not be used,
               copied, reproduced, distributed, transmitted, broadcast,
               displayed, sold, licensed, or otherwise exploited for any other
               purposes whatsoever without the prior written consent of the
-              respective owners, except as permitted through Navi Savi’s
+              respective owners, except as permitted through NaviSavi’s
               functionality and under these Terms of Use. We reserve all rights
-              not expressly granted in and to Navi Savi and the Content.
+              not expressly granted in and to NaviSavi and the Content.
             </p>
             <p>
               As between you and us, you retain ownership of any intellectual
@@ -525,9 +525,9 @@ const termsOfService = () => {
               rights, and all claims and causes of action of any kind against us
               or related to our customers and partners anywhere in the world,
               with respect to such rights in Your Content. With respect to other
-              users, you grant each Navi Savi user, whether using Navi Savi or
+              users, you grant each NaviSavi user, whether using NaviSavi or
               an application developed via a third-party developer, a
-              non-exclusive license to access Your Content through Navi Savi and
+              non-exclusive license to access Your Content through NaviSavi and
               to use, reproduce, distribute, prepare derivative works of,
               display and perform such submissions as permitted through Navi
               Savi’s functionality and under these Terms of Use.
@@ -552,9 +552,9 @@ const termsOfService = () => {
               site; (3) Identification of the material that is claimed to be
               infringing or to be the subject of infringing activity and that is
               to be removed or access to which is to be disabled and information
-              reasonably sufficient to permit Navi Savi or its service provider
+              reasonably sufficient to permit NaviSavi or its service provider
               to locate the material; (4) Information reasonably sufficient to
-              permit Navi Savi or its service provider to contact you, such as
+              permit NaviSavi or its service provider to contact you, such as
               an address, telephone number, and, if available, an electronic
               mail; (5) A statement that you have a good faith belief that use
               of the material in the manner complained of is not authorized by
@@ -564,12 +564,12 @@ const termsOfService = () => {
               the owner of an exclusive right that is allegedly infringed.
             </p>
             <p>
-              Navi Savi’s designated Copyright Agent to receive notifications of
+              NaviSavi’s designated Copyright Agent to receive notifications of
               claimed infringement can be reached by sending an email to
               contact@navi-savi.com or a letter to:
             </p>
             <p style={{ padding: "0" }}>VoyagerHQ</p>
-            <p style={{ padding: "0" }}>c/o Navi Savi, LLC.</p>
+            <p style={{ padding: "0" }}>c/o NaviSavi, LLC.</p>
             <p style={{ padding: "0" }}>Attn: Legal Department</p>
             <p style={{ padding: "0" }}>137 W 25th St. 11th floor,</p>
             <p style={{ padding: "0" }}>New York, NY 10001</p>
@@ -582,18 +582,18 @@ const termsOfService = () => {
             <p>
               You and we agree to use electronic means to communicate with one
               another, whether you visit the Platform or send us emails, or
-              whether Navi Savi posts notices on the Service or communicates
+              whether NaviSavi posts notices on the Service or communicates
               with you via email. For contractual purposes, you (1) consent to
-              receive communications from Navi Savi in an electronic form; and
+              receive communications from NaviSavi in an electronic form; and
               (2) agree that all terms and conditions, agreements, notices,
-              disclosures, and other communications that Navi Savi provides to
+              disclosures, and other communications that NaviSavi provides to
               you electronically satisfy any legal requirement that such
               communications would satisfy if it were in writing. The foregoing
               does not affect any non-waivable rights.
             </p>
             <li className="main-list">PROMOTIONS</li>
             <p>
-              Navi Savi sometimes offers Promotions that allow users to receive
+              NaviSavi sometimes offers Promotions that allow users to receive
               free or discounted Services. Eligibility, duration, discount or
               reimbursement amount, and other terms for each Promotion are
               specified in its Promotion Terms, but those Promotion Terms shall
@@ -623,7 +623,7 @@ const termsOfService = () => {
             </p>
             <p>
               These Terms of Use is governed by the laws of the State of
-              Nebraska, regardless of its conflicts of law rules. At Navi Savi’s
+              Nebraska, regardless of its conflicts of law rules. At NaviSavi’s
               sole discretion, it may require you to submit any disputes arising
               from these Terms of Use or your use of the Platform, including
               disputes arising from or concerning their interpretation,
@@ -633,10 +633,10 @@ const termsOfService = () => {
             </p>
             <p>
               These Terms of Use, together with the Privacy Notice and any other
-              legal notices published by Navi Savi on the Website, shall
-              constitute the entire agreement between you and Navi Savi
+              legal notices published by NaviSavi on the Website, shall
+              constitute the entire agreement between you and NaviSavi
               concerning the Platform except to the extent that any other
-              agreement is signed by both you and Navi Savi.
+              agreement is signed by both you and NaviSavi.
             </p>
             <p>
               YOU AND WE AGREE THAT ANY CAUSE OF ACTION ARISING OUT OF OR
@@ -675,13 +675,13 @@ const termsOfService = () => {
                 telephone calls initiated using the Platform.
               </li>
               <li>
-                19.6. “Navi Savi Affiliates” means any of our affiliates or
+                19.6. “NaviSavi Affiliates” means any of our affiliates or
                 subsidiaries, or any of their or our respective owners,
                 managers, officers, employees, agents or representatives.
               </li>
               <li>
                 19.7. “Payment Management Vendor” means any third party
-                contracted by Navi Savi to process payments on the Platform.
+                contracted by NaviSavi to process payments on the Platform.
                 Stripe or Plaid Technologies.
               </li>
               <li>
@@ -694,7 +694,7 @@ const termsOfService = () => {
                 www.navisaviapp.com/privacy-policy.
               </li>
               <li>
-                19.10. “Promotion” means an offer from Navi Savi to discount or
+                19.10. “Promotion” means an offer from NaviSavi to discount or
                 reimburse a user for the cost of certain Services.
               </li>
               <li>
@@ -713,7 +713,7 @@ const termsOfService = () => {
                 ability to submit responses to user Content, the ability to
                 update and maintain profile information on your Listed Business,
                 the ability to utilize the dispute resolution process offered
-                through the Website and facilitated by Navi Savi, and any of the
+                through the Website and facilitated by NaviSavi, and any of the
                 other services that we may offer to Listed Businesses from time
                 to time.
               </li>
@@ -741,7 +741,7 @@ const termsOfService = () => {
               <li>
                 19.18. “Terms of Use” means our terms and conditions for users
                 and Listed Businesses’ use of the Platform, which are located at
-                Navi Savi.com/tos.
+                NaviSavi.com/tos.
               </li>
               <li>
                 19.19. “Transaction” means each time that a Listed Business or

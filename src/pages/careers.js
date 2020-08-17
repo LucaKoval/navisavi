@@ -26,7 +26,7 @@ const Careers = () => {
                     <div className={styles.title}>Careers</div>
                     <div className={styles.subtitlesContainer}>
                         <div className={styles.subtitle}>
-                            Want to join the Navi Savi team!?
+                            Want to join the NaviSavi team!?
                         </div>
                         <div className={styles.subtitle}>
                             Trust me, we’ve never been called boring.

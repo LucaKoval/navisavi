@@ -4,9 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Navi Savi`,
-    description: `Real Travels. Short Videos.`,
-    author: `Dan Choiniere`,
+    title: `NaviSavi`,
+    description: `Genuine travel videos uploaded by real people.`,
+    author: `Dan Choiniere and Luca Koval`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
