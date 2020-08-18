@@ -84,20 +84,20 @@ module.exports = {
     //     icon: `src/favicon.png`,
     //   },
     // },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [
-          `/404/`,
-          `/about/`,
-          `/contact/`,
-          `/careers/`,
-          `/earn/`,
-          `/privacy-policy/`,
-          `/terms-of-service/`,
-        ],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-offline`,
+    //   options: {
+    //     precachePages: [
+    //       `/404/`,
+    //       `/about/`,
+    //       `/contact/`,
+    //       `/careers/`,
+    //       `/earn/`,
+    //       `/privacy-policy/`,
+    //       `/terms-of-service/`,
+    //     ],
+    //   },
+    // },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
