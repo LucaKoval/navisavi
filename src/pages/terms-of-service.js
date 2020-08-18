@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
 import styles from "../styles/PrivacyPolicyAndTermsOfService.module.css"
 
 const termsOfService = () => {
