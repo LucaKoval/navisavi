@@ -45,7 +45,8 @@ export default class Header extends Component {
     	super(props)
     	this.state = {
       		navOpen: false,
-      		hamburger: false
+      		hamburger: false,
+      		hasMounted: false
     	}
 
     	this.updateWidth = this.updateWidth.bind(this);
@@ -54,6 +55,7 @@ export default class Header extends Component {
   	componentDidMount() {
     	window.addEventListener('resize', this.updateWidth);
     	this.updateWidth();
+    	this.setState({ hasMounted: true })
   	}
 
   	componentWillUnmount() {
@@ -92,6 +94,7 @@ export default class Header extends Component {
 			if (typeof window !== "undefined") return window.location.pathname !== "/"
 			return false
 		}
+		if (!this.state.hasMounted) return null;
 	    return (
 	    	<div className={styles.nav}>
 		    	<div className={styles.navLeft}>
