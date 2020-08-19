@@ -1,4 +1,3 @@
-import styles from "../styles/Header.module.css"
 import React, { Component } from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
@@ -6,6 +5,7 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"
 import { GrClose } from "react-icons/gr"
 import { FaBars, FaRegWindowClose, FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa"
 import { Link } from "gatsby"
+import styles from "../styles/Header.module.css"
 
 export const Logo = (props) => {
   	const data = useStaticQuery(graphql`
@@ -45,7 +45,8 @@ export default class Header extends Component {
     	super(props)
     	this.state = {
       		navOpen: false,
-      		hamburger: false
+      		hamburger: false,
+      		hasMounted: false
     	}
 
     	this.updateWidth = this.updateWidth.bind(this);
@@ -54,6 +55,7 @@ export default class Header extends Component {
   	componentDidMount() {
     	window.addEventListener('resize', this.updateWidth);
     	this.updateWidth();
+    	this.setState({ hasMounted: true })
   	}
 
   	componentWillUnmount() {
@@ -92,6 +94,7 @@ export default class Header extends Component {
 			if (typeof window !== "undefined") return window.location.pathname !== "/"
 			return false
 		}
+		if (!this.state.hasMounted) return null;
 	    return (
 	    	<div className={styles.nav}>
 		    	<div className={styles.navLeft}>
