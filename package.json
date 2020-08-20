@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "NaviSavi",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Genuine travel videos uploaded by real people.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Dan Choiniere and Luca Koval",
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^13.4.0",
     "@contentful/rich-text-types": "^14.1.1",
@@ -52,9 +52,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/dchoinie/navisavi"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/dchoinie/navisavi/issues"
   }
 }
