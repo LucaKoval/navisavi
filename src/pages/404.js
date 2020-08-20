@@ -9,7 +9,7 @@ const NotFoundPage = () => (
       	<div className={styles.container}>
       		<div className={styles.contentContainer}>
 			    <div className={styles.title}>NOT FOUND</div>
-			    <div>You just hit a route that doesn't exist... the sadness. 😢</div>
+			    <div>You just hit a route that doesn't exist... the sadness. <span role="img">😢</span></div>
 			</div>
 	    </div>
   	</Layout>
