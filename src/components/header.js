@@ -165,7 +165,7 @@ export default class Header extends Component {
 				    	</div>
 			    	</div>
 		    	</div>
-		    	<div className={styles.navRight}>
+		    	<div className={styles.navRight} style={ displayDownloadButton() ? { marginTop: -2, top: 9, right: 45 } : { marginTop: 8, bottom: 0, right: 12 }}>
 			    	<div className={styles.navItem}>
 			    		<a href="/#features" className={styles.navLink}>Features</a>
 			    	</div>

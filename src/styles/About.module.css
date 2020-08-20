@@ -21,24 +21,26 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    max-width: 750px;
     padding: 0 200px;
 }
 
 .contentContainer > div {
     margin-bottom: 28px;
+    color: var(--dark-grey);
 }
 
 .companyPosition {
     margin-top: -24px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 900px) {
     .contentContainer {
-        padding: 0 150px;
+        padding: 0 125px;
     }
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 775px) {
     .contentContainer {
         padding: 0 75px;
     }
