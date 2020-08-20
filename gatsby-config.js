@@ -75,11 +75,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `NaviSavi`,
+        short_name: `NaviSavi`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#6977ff`,
+        theme_color: `#6977ff`,
         display: `minimal-ui`,
         icon: `src/favicon.png`,
       },
@@ -90,8 +90,8 @@ module.exports = {
         precachePages: [
           `/404/`,
           `/about/`,
-          `/contact/`,
           `/careers/`,
+          `/contact/`,
           `/earn/`,
           `/privacy-policy/`,
           `/terms-of-service/`,

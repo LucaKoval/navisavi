@@ -1,6 +1,6 @@
 exports.careers = [
 	{
-		title: "Graduate Studies - Business/Finance & Fundraising (Must have associated resume experience) (1 position)",
+		title: "Graduate Studies - Business/Finance & Fundraising",
 		slug: "business-finance-fundraising",
 		descriptionHTML: `
 			<div>
@@ -51,7 +51,7 @@ exports.careers = [
 		"tags": ["Remote", "Stipend", "Course Credit"]
 	},
 	{
-		title: "Graduate or Senior Marketing/Branding/Press (online and other forms) (1 position)",
+		title: "Graduate or Senior Marketing/Branding/Press",
 		slug: "senior-marketing-branding-press",
 		descriptionHTML: `
 			<div>
@@ -112,7 +112,7 @@ exports.careers = [
 		"tags": ["Remote", "Stipend", "Course Credit"]
 	},
 	{
-		title: "Graduate or Senior Advertising/Social Media Management (1 position)",
+		title: "Graduate or Senior Advertising/Social Media Management",
 		slug: "senior-advertising-social-media-management",
 		descriptionHTML: `
 			<div>
@@ -163,7 +163,7 @@ exports.careers = [
 		"tags": ["Remote", "Stipend", "Course Credit"]
 	},
 	{
-		title: "Marketing/Branding/Press (online and other forms) (2 positions) interns - all experience levels to assist on/report to the senior roles",
+		title: "Marketing/Branding/Press",
 		slug: "marketing-branding-press",
 		descriptionHTML: `
 			<div>
@@ -271,7 +271,7 @@ exports.careers = [
 		"tags": ["Remote", "Stipend", "Course Credit"]
 	},
 	{
-		title: "Video Production & Content Production Intern (Any Level) 2 positions",
+		title: "Video Production & Content Production Intern",
 		slug: "video-production-content-production",
 		descriptionHTML: `
 			<div>
@@ -323,7 +323,7 @@ exports.careers = [
 		"tags": ["Remote", "Stipend", "Course Credit"]
 	},
 	{
-		title: "Community & Outreach - Any level (2-3 positions) This role may involve occasional travel (pending COVID restrictions)",
+		title: "Community & Outreach - Any level. This role may involve occasional travel (pending COVID restrictions)",
 		slug: "community-outreach",
 		descriptionHTML: `
 			<div>
