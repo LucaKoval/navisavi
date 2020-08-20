@@ -30,9 +30,9 @@
 }
 
 .rightDownloadButtonContainer {
-	/*margin-top: -20px;*/
 	position: relative;
 	top: -13.4px;
+	left: 20px;
 }
 
 .rightDownloadButton {
@@ -174,11 +174,11 @@
     flex-direction: row;
     justify-content: space-evenly;
     position: relative;
-    top: 8px;
     padding-right: 14px;
 }
 
-.navRight > div {
+.navItem {
+	position: relative;
     padding: 0 22px;
 }
 
