@@ -1,5 +1,4 @@
 import React, { useLayoutEffect, useState } from 'react';
-import { FaStar } from "react-icons/fa"
 import Layout from "../components/layout"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
