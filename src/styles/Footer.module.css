@@ -92,6 +92,8 @@
     color: white;
 
     transition: all 0.17s ease;
+
+    overflow: visible;
 }
 
 .socialLinkIcon:hover {

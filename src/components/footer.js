@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaAngellist } from "react-icons/fa"
 import styles from "../styles/Footer.module.css"
 import BackgroundImage from 'gatsby-background-image'
 
@@ -101,6 +101,14 @@ const Footer = () => {
                         className={styles.socialLink}
                     >
                         <FaLinkedin className={styles.socialLinkIcon} />
+                    </a>
+                    <a
+                        href="https://angel.co/company/navisaviapp/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.socialLink}
+                    >
+                        <FaAngellist style={{ position: "relative", paddingRight: 6.5, paddingLeft: 5.5 }} className={styles.socialLinkIcon} />
                     </a>
                 </div>
             </div>
