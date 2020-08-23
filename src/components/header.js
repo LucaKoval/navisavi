@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"
 import { GrClose } from "react-icons/gr"
-import { FaBars, FaRegWindowClose, FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { FaBars, FaRegWindowClose, FaFacebook, FaInstagram, FaLinkedin, FaTwitter,FaAngellist } from "react-icons/fa"
 import { Link } from "gatsby"
 import styles from "../styles/Header.module.css"
 
@@ -112,7 +112,7 @@ export default class Header extends Component {
 			    	<FaBars className={styles.hamburger} style={ navOpen ? { display: "none" } : {} } onClick={() => this.toggleNav()} />
 			    	<FaRegWindowClose className={styles.hamburgerClose} style={ navOpen ? {} : { display: "none" } } onClick={() => this.toggleNav()} />
 			    	<div className={styles.darkenBackground} style={ navOpen ? {} : { display: "none" } } />
-			    	<div className={styles.hamburgerMenu} style={ navOpen ? {} : { display: "none" } } >
+			    	<div className={`${styles.hamburgerMenu} ${navOpen ? "" : styles.hamburgerMenuClose}`}>
 				    	<div className={styles.hamburgerMenuItemContainer}>
 				    		<a href="/#features" className={styles.hamburgerMenuItem} onClick={() => this.toggleNav()}>Features</a>
 				    	</div>
@@ -161,6 +161,14 @@ export default class Header extends Component {
 						    	>
 						    		<FaLinkedin className={styles.socialLinkIcon} />
 						    	</a>
+								<a
+			                        href="https://angel.co/company/navisaviapp/"
+			                        target="_blank"
+			                        rel="noopener noreferrer"
+			                        className={styles.socialLink}
+			                    >
+			                        <FaAngellist style={{ position: "relative", paddingRight: 6.5, paddingLeft: 5.5 }} className={styles.socialLinkIcon} />
+			                    </a>
 					    	</div>
 				    	</div>
 			    	</div>
