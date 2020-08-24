@@ -55,6 +55,9 @@
     color: var(--dark-grey);
 }
 
+
+/* Dimension checks */
+
 @media screen and (max-width: 1259px) {
     .textContainer {
         margin-top: 10px;
