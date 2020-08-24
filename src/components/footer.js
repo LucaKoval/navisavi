@@ -11,7 +11,7 @@ const Footer = () => {
           childImageSharp {
             fluid(quality: 70) {
               src
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }

@@ -17,7 +17,7 @@ const Hero = () => {
           childImageSharp {
             fluid {
               src
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
@@ -25,7 +25,7 @@ const Hero = () => {
           childImageSharp {
             fluid {
               src
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }

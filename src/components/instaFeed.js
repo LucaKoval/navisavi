@@ -25,7 +25,7 @@ const InstaFeed = () => {
                                 fluid(maxWidth: 500) {
                                     src
                                     srcSet
-                                    ...GatsbyImageSharpFluid
+                                    ...GatsbyImageSharpFluid_noBase64
                                 }
                             }
                         }
