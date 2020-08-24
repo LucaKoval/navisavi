@@ -39,7 +39,7 @@ const InstaFeed = () => {
     let size = Math.min(6, Math.round(windowWidth/200))
     let captionLength = 4*size
     let dim = ""+(windowWidth/size)+"px"
-    let dimCaption = ""+(windowWidth/size - 20)+"px"
+    let dimCaption = ""+(windowWidth/size - 30)+"px"
     return (
         <div className={styles.container}>
             {data.allInstaNode.edges.slice(0, size).map(({ node: insta }) => {
@@ -55,7 +55,11 @@ const InstaFeed = () => {
                                 fluid={insta.localFile.childImageSharp.fluid}
                                 className={styles.image}
                             />
-                            <div className={styles.caption} style={{ width: dim, height: dim }}>{insta.caption.slice(0, captionLength).concat("...")}</div>
+                            <div className={styles.captionContainer} style={{ width: dim, height: dim }}>
+                                <div className={styles.caption} style={{ width: dimCaption, height: dimCaption }}>
+                                    {insta.caption.slice(0, captionLength).concat("...")}
+                                </div>
+                            </div>
                         </a>
                     </div>
                 )

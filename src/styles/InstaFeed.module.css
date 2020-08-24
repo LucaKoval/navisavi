@@ -21,7 +21,7 @@
     overflow: hidden;
 }
 
-.caption {
+.captionContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +37,13 @@
     transition: all 0.10s ease;
 }
 
-.link:hover > .caption {
+.caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link:hover > .captionContainer {
     color: white;
     background-color: rgba(0, 0, 0, 80%);
 }
