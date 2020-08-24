@@ -1,0 +1,24 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: max(100vh, 900px);
+}
+
+.contentContainer {
+	position: relative;
+	top: -40px;
+}
+
+.contentContainer > div {
+	color: var(--dark-grey);
+}
+
+.title {
+	font-family: "SofiaPro-Bold", sans-serif;
+	font-size: 89px;
+	position: relative;
+	left: -7px;
+	top: 8px;
+}

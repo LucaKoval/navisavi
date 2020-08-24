@@ -30,9 +30,9 @@
 }
 
 .rightDownloadButtonContainer {
-	/*margin-top: -20px;*/
 	position: relative;
 	top: -13.4px;
+	left: 20px;
 }
 
 .rightDownloadButton {
@@ -91,6 +91,7 @@
 
 .hamburgerClose {
     position: relative;
+    right: 10px;
     color: var(--dark-grey);
     font-size: 22px;
     z-index: 13;
@@ -115,16 +116,16 @@
     position: absolute;
     top: 0;
     right: 0;
-    /*transform: translateX(390px);*/
     height: 100vh;
     width: 330px;
     background-color: white;
     padding: 30px;
     z-index: 12;
+    transition: all 0.18s ease;
 }
 
-.hamburger:active ~ .hamburgerMenu {
-    /*transform: translateX(0px);*/
+.hamburgerMenuClose {
+	transform: translateX(390px);
 }
 
 .hamburgerMenuItemContainer {
@@ -162,6 +163,8 @@
     color: var(--pink);
 
     transition: all 0.15s ease;
+
+    overflow: hidden;
 }
 
 .socialLinkIcon:hover {
@@ -174,11 +177,11 @@
     flex-direction: row;
     justify-content: space-evenly;
     position: relative;
-    top: 8px;
     padding-right: 14px;
 }
 
-.navRight > div {
+.navItem {
+	position: relative;
     padding: 0 22px;
 }
 
