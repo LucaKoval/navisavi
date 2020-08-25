@@ -3,7 +3,8 @@ import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
-  FaTwitter
+  FaTwitter,
+  FaAngellist
 } from "react-icons/fa"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -99,6 +100,14 @@ const Contact = () => {
                                 className={styles.socialLink}
                             >
                                 <FaLinkedin className={styles.socialLinkIcon} />
+                            </a>
+                            <a
+                                href="https://angel.co/company/navisaviapp/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.socialLink}
+                            >
+                                <FaAngellist style={{ position: "relative", paddingRight: 6.5, paddingLeft: 5.5 }} className={styles.socialLinkIcon} />
                             </a>
                         </div>
                     </div>

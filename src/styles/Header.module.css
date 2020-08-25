@@ -215,6 +215,9 @@
     transform-origin: left;
 }
 
+
+/* Display checks */
+
 @media screen and (max-width: 1024px) {
     .hamburgerContainer {
         display: inline;
@@ -226,3 +229,19 @@
     }
 }
 
+
+/* Resolution checks */
+
+@media (min-resolution: 144dpi) {
+    .middleDownloadButton {
+        padding-top: 19px;
+    }
+
+    .rightDownloadButtonContainer {
+        top: -17.4px;
+    }
+
+    .rightDownloadButton {
+        padding-top: 20px;
+    }
+}

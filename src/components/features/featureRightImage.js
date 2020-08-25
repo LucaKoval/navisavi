@@ -12,7 +12,7 @@ const FeatureRightImage = ({ imageNum, icon, mainText, subText }) => {
           childImageSharp {
             fluid(quality: 70) {
               src
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
@@ -20,7 +20,7 @@ const FeatureRightImage = ({ imageNum, icon, mainText, subText }) => {
           childImageSharp {
             fluid(quality: 70) {
               src
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }

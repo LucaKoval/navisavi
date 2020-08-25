@@ -58,6 +58,9 @@
     border-radius: 4px;
 }
 
+
+/* Dimension checks */
+
 @media screen and (max-width: 1128px) {
     .mainText {
         font-size: 70px;
@@ -94,5 +97,14 @@
     .mainText {
         font-size: 60px;
         padding: 0 50px;
+    }
+}
+
+
+/* Resolution checks */
+
+@media (min-resolution: 144dpi) {
+    .button {
+        padding-top: 27px;
     }
 }

@@ -17,7 +17,7 @@ const Hero = () => {
           childImageSharp {
             fluid {
               src
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
@@ -25,12 +25,13 @@ const Hero = () => {
           childImageSharp {
             fluid {
               src
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_noBase64
             }
           }
         }
       }
     `)
+    console.log(window)
     return (
         <div>
             <div className={styles.container}>

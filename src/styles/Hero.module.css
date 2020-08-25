@@ -43,6 +43,8 @@
 }
 
 .tagline > div {
+    position: relative;
+    left: -2.4px;
     font-size: 83px;
     font-family: "SofiaPro-Bold", sans-serif;
     padding-bottom: 5px;
@@ -230,6 +232,9 @@
     margin-bottom: 3px;
 }
 
+
+/* Dimension checks */
+
 @media screen and (max-width: 1389px) {
     .content {
         padding-top: 265px;
@@ -380,3 +385,18 @@
         padding-top: 38px;
     }
 }
+
+
+/* Resolution checks */
+
+@media (min-resolution: 144dpi) {
+    .buttonContainer > input[type="submit"] {
+        padding-bottom: 0;
+        padding-top: 3px;
+    }
+
+    .form > input[type="email"]::placeholder {
+        top: 3px;
+    }
+}
+
