@@ -31,7 +31,6 @@ const Hero = () => {
         }
       }
     `)
-    console.log(window)
     return (
         <div>
             <div className={styles.container}>
