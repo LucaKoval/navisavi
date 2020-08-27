@@ -88,13 +88,13 @@ export default class Header extends Component {
   	}
 
   	render() {
+  		if (!this.state.hasMounted) return null;
 	    if (typeof document !== "undefined") document.body.style.overflow = this.state.navOpen ? "hidden" : ""
 	    const { navOpen } = this.state
 		const displayDownloadButton = () => {
 			if (typeof window !== "undefined") return window.location.pathname !== "/"
 			return false
 		}
-		if (!this.state.hasMounted) return null;
 	    return (
 	    	<div className={styles.nav}>
 		    	<div className={styles.navLeft}>
