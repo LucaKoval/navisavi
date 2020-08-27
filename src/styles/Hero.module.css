@@ -108,20 +108,30 @@
     outline: none;
     border-radius: 4px;
     height: 60px;
+    line-height: 65px;
     outline: none;
+    box-sizing: border-box;
     padding-left: 20px;
+    padding-right: 130px;
+    padding-top: 2px;
+    padding-bottom: 0;
     background-color: #ebeff2;
+    color: var(--dark-grey);
 
-    transition: all 0.10s ease;
+    transition: background-color 0.12s ease;
+}
+
+.form > input[type="email"]:placeholder-shown {
+    padding-top: 0;
+    padding-bottom: 4px;
 }
 
 .form > input[type="email"]::placeholder {
     position: relative;
-    top: 0px;
+    top: 0;
 }
 
 .form > input[type="email"]:focus {
-    outline: none;
     background-color: #dfe3e6;
 }
 
