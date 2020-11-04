@@ -1,3 +1,39 @@
+.signupModalContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--dark-grey);
+}
+
+.signupModal {
+    position: relative;
+    width: 50%;
+    background: #fff;
+    border-radius: 4px;
+    padding: 40px;
+    padding-bottom: 10px;
+}
+
+.closeModal {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.signupModalTagline {
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+
 .container {
     display: flex;
     flex-direction: row;

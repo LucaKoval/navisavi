@@ -40,6 +40,10 @@ body {
     font-family: "SofiaPro-Bold", sans-serif;
 }
 
+.modal-open {
+    overflow: hidden;
+}
+
 input[type="submit"] {
 	-webkit-appearance: none;
 }
