@@ -9,6 +9,7 @@
 
     --dark-grey: #484848;
     --light-grey: #999999;
+    --very-light-grey: #cccccc;
 }
 
 * {
@@ -38,6 +39,10 @@ body {
 
 .bold {
     font-family: "SofiaPro-Bold", sans-serif;
+}
+
+.pink {
+    color: var(--pink);
 }
 
 .modal-open {

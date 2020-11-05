@@ -16,11 +16,11 @@
 
 .signupModal {
     position: relative;
-    width: 50%;
+    width: 70%;
     background: #fff;
     border-radius: 4px;
     padding: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 
 .closeModal {
@@ -30,8 +30,13 @@
 }
 
 .signupModalTagline {
-    margin-top: 20px;
-    margin-bottom: 2px;
+    margin-bottom: 20px;
+
+    position: relative;
+    left: -2.4px;
+    font-size: 83px;
+    font-family: "SofiaPro-Bold", sans-serif;
+    padding-bottom: 5px;
 }
 
 .container {
@@ -67,7 +72,7 @@
     justify-content: flex-start;
     align-items: center;
     height: 100%;
-    padding-top: 255px;
+    padding-top: 128px;
 }
 
 .tagline {
@@ -123,83 +128,60 @@
 
 .callToAction {
     margin-top: 5px;
-    margin-bottom: 2px;
-}
-
-.inputContainer {
-    width: 100%;
-    margin-top: -24px;
+    margin-bottom: 8px;
 }
 
 .form {
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.form > input[type="email"] {
+.inputContainer {
     width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    height: 60px;
-    line-height: 65px;
-    outline: none;
-    box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 130px;
-    padding-top: 2px;
-    padding-bottom: 0;
-    background-color: #ebeff2;
-    color: var(--dark-grey);
-
-    transition: background-color 0.12s ease;
+    margin-top: -20px;
 }
 
-.form > input[type="email"]:placeholder-shown {
-    padding-top: 0;
-    padding-bottom: 4px;
+.nameInputContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.form > input[type="email"]::placeholder {
-    position: relative;
-    top: 0;
-}
-
-.form > input[type="email"]:focus {
-    background-color: #dfe3e6;
+.spacer {
+    width: 40px;
 }
 
 .buttonContainer {
     position: relative;
+    top: -10px;
     height: 100%;
-    margin: 0;
+    width: 100%;
+}
+
+.buttonShadow,
+.buttonContainer > input[type="submit"] {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    outline: none;
 }
 
 .buttonShadow {
-    position: relative;
     top: 30px;
-    margin-left: -110px;
-    height: 60px;
-    width: 110px;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    outline: none;
     padding: 0;
     background-color: var(--dark-pink);
     z-index: 1;
 }
 
 .buttonContainer > input[type="submit"] {
-    position: relative;
     top: -30px;
-    margin-left: -110px;
-    height: 60px;
-    width: 110px;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    outline: none;
     padding-bottom: 2px;
     color: white;
     background-color: var(--pink);
@@ -216,6 +198,69 @@
 .buttonContainer > input[type="submit"]:active {
     transform: translateY(0px);
     background-color: var(--dark-pink);
+}
+
+.inputField {
+    display: flex;
+    flex-flow: column-reverse;
+    width: 100%;
+}
+
+label, .inputField input {
+    transition: all 0.10s ease;
+}
+
+label {
+    position: relative;
+    top: 52px;
+    left: 20px;
+    color: var(--light-grey);
+    width: calc(100% - 20px);
+    transform-origin: left bottom;
+    line-height: 22px;
+}
+
+.inputField input:placeholder-shown + label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: text;
+}
+
+.inputField input::placeholder {
+    transition: inherit;
+    opacity: 0;
+    position: relative;
+    top: 0px;
+}
+
+.inputField input:not(:placeholder-shown) + label,
+.inputField input:focus + label {
+    top: 38px;
+    cursor: pointer;
+}
+
+.inputField input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #ebeff2;
+    height: 68px;
+    line-height: 74px;
+    box-sizing: border-box;
+    padding: 20px;
+    padding-top: 54px;
+}
+
+.inputField input:hover {
+    background-color: #fff;
+    box-shadow: 0 0 0 4px #ebeff2;
+}
+
+.inputField input:focus {
+    background-color: #fff;
+    box-shadow: 0 0 0 4px var(--purple);
 }
 
 .videoContainer {
@@ -283,7 +328,7 @@
 
 @media screen and (max-width: 1389px) {
     .content {
-        padding-top: 265px;
+        /*padding-top: 265px;*/
     }
 
     .tagline > div {
@@ -293,7 +338,7 @@
 
 @media screen and (max-width: 1221px) {
     .content {
-        padding-top: 250px;
+        padding-top: 122px;
     }
 }
 
@@ -315,7 +360,7 @@
 
 @media screen and (max-height: 900px) and (max-width: 1025px) {
 	.container {
-        height: 900px;
+        height: 1200px;
     }
 }
 
@@ -325,7 +370,7 @@
         justify-content: flex-start;
         align-items: center;
         width: 100%;
-        height: 1000px;
+        height: 1200px;
     }
 
     .mainElements {
@@ -361,41 +406,59 @@
     }
 }
 
+@media screen and (max-width: 985px) {
+    .videoContainer {
+        padding-top: 12px;
+    }
+}
+
 @media screen and (max-width: 811px) {
     .tagline > div {
         font-size: 60px;
     }
 
     .videoContainer {
-        padding-top: 24px;
+        padding-top: 10px;
     }
 }
 
 @media screen and (max-width: 755px) {
     .videoContainer {
-        padding-top: 14px;
+        padding-top: 0;
     }
 }
 
 @media screen and (max-width: 710px) {
+    .container {
+        height: 1340px;
+    }
+
     .tagline > div {
         font-size: 50px;
     }
 
+    .nameInputContainer {
+        flex-direction: column;
+    }
+
+    .spacer {
+        display: none;
+    }
+
     .videoContainer {
-        padding-top: 18px;
+        padding-top: 28px;
     }
 }
 
 @media screen and (max-width: 647px) {
     .videoContainer {
-        padding-top: 8px;
+        padding-top: 26px;
     }
 }
 
 @media screen and (max-width: 614px) {
     .videoContainer {
-        padding-top: 32px;
+        padding-top: 42px;
     }
 
     .video {
@@ -405,7 +468,7 @@
 
 @media screen and (max-width: 530px) {
     .container {
-        height: 1100px;
+        height: 1400px;
     }
 
     .tagline > div {
@@ -414,7 +477,7 @@
     }
 
     .videoContainer {
-        padding-top: 56px;
+        padding-top: 46px;
     }
 
     .video {
@@ -424,7 +487,7 @@
 
 @media screen and (max-width: 513px) {
     .videoContainer {
-        padding-top: 32px;
+        padding-top: 20px;
     }
 }
 
@@ -435,18 +498,18 @@
 }
 
 @media screen and (max-width: 446px) {
+    .container {
+        height: 1460px;
+    }
+
     .videoContainer {
-        padding-top: 3px;
+        padding-top: 22px;
     }
 }
 
 @media screen and (max-width: 436px) {
-	.container {
-        height: 1200px;
-    }
-
     .videoContainer {
-        padding-top: 54px;
+        padding-top: 20px;
     }
 }
 
@@ -459,8 +522,9 @@
         padding-top: 3px;
     }
 
-    .form > input[type="email"]::placeholder {
+    /*.form input[type="email"]::placeholder,
+    .form input[type="text"]::placeholder {
         top: 3px;
-    }
+    }*/
 }
 
