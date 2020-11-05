@@ -9,6 +9,12 @@ const Hero = () => {
     const [displaySignupModal, setDisplaySignupModal] = useState(false);
 
     useEffect(() => {
+        if (typeof window !== "undefined") {
+            if (window.history.replaceState) {
+                window.history.replaceState(null, null, window.location.href);
+            }
+        }
+
         setTimeout(() => {
             if (typeof document !== "undefined") document.body.classList.add('modal-open')
             setDisplaySignupModal(true)
