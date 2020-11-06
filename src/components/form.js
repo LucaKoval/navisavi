@@ -14,30 +14,6 @@ const signInValidationSchema = Yup.object().shape({
 const Form = () => {
 	const [displayError, setDisplayError] = useState(false)
 
-	const handleSubmit = (event, values, touched, setFieldError) => {
-		console.log('asdlkfj')
-		// let emailError = true
-		// if (errors) {
-		// 	emailError = errors['beta-email']
-		// }
-		// if (!touched['beta-email'] || emailError) event.preventDefault()
-
-
-		let emailVal = values['beta-email']
-		let emailError = true
-		// if (emailVal) {
-			signInValidationSchema.isValid(emailVal).then((isValid) => {
-				if (!isValid) setFieldError('beta-email', '')
-				emailError = !isValid
-				console.log(emailError)
-			})
-		// } else {
-		// 	emailError = true
-		// }
-
-		if (!touched['beta-email'] || emailError) event.preventDefault()
-	}
-
 	return (
 		<Formik
 	        initialValues={{ ['beta-email']: '', ['beta-first-name']: '', ['beta-last-name']: '' }}
@@ -48,9 +24,7 @@ const Form = () => {
 	            errors,
 	            touched,
 	            handleChange,
-	            handleBlur,
-	            submitForm,
-	            setFieldError
+	            handleBlur
 	        }) => (
 				<form
 				    name="beta-signup"
@@ -58,12 +32,6 @@ const Form = () => {
 				    data-netlify="true"
 				    className={styles.form}
 				    action="/"
-				    onSubmit={(e) => handleSubmit(e, values, touched, setFieldError)}
-				    onKeyDown={(e) => {
-                		if (e.key === 'Enter') {
-                  			handleSubmit(e, values, touched, setFieldError)
-                		}
-              		}}
 				> 
 				    <div className={styles.inputContainer}>
 				        <div className={styles.inputField}>
