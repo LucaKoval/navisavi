@@ -5,10 +5,10 @@ import { Formik } from "formik"
 import styles from "../styles/Hero.module.css"
 
 const signInValidationSchema = Yup.object().shape({
-  ['beta-email']: Yup.string()
-    .label("Email")
-    .email("Please enter a valid email")
-    .required("Please enter an email")
+ 	betaEmail: Yup.string()
+    	.label("Email")
+    	.email("Please enter a valid email")
+    	.required("Please enter an email")
 });
 
 const Form = () => {
@@ -16,7 +16,7 @@ const Form = () => {
 
 	return (
 		<Formik
-	        initialValues={{ ['beta-email']: '', ['beta-first-name']: '', ['beta-last-name']: '' }}
+	        initialValues={{ betaEmail: '', betaFirstName: '', betaLastName: '' }}
 	        validationSchema={signInValidationSchema}
 	    >
 	        {({
@@ -36,49 +36,49 @@ const Form = () => {
 				    <div className={styles.inputContainer}>
 				        <div className={styles.inputField}>
 				            <input
-				                id="beta-email"
+				                id="betaEmail"
 				                type="email"
-				                name="beta-email"
+				                name="betaEmail"
 				                onChange={handleChange}
 					            onBlur={handleBlur}
-								value={values['beta-email']}
+								value={values.betaEmail}
 				                placeholder="Email (required)"
 				                aria-required="true"
 				            />
-				            <label for="beta-email">Email (required)</label>
+				            <label for="betaEmail">Email (required)</label>
 				        </div>
-				        { (errors['beta-email'] && touched['beta-email']) &&
-				        	<div className={styles.error} style={ (errors['beta-email'] && touched['beta-email']) ? {} : { display: 'none' }}>
-				        		{errors['beta-email']}
+				        { (errors.betaEmail && touched.betaEmail) &&
+				        	<div className={styles.error} style={ (errors.betaEmail && touched.betaEmail) ? {} : { display: 'none' }}>
+				        		{errors.betaEmail}
 				        	</div>
 				        }
 				        <div className={styles.nameInputContainer}>
 				            <div className={styles.inputField}>
 				                <input
-				                    id="beta-first-name"
+				                    id="betaFirstName"
 				                    type="text"
-				                    name="beta-first-name"
+				                    name="betabetaFirstName"
 				                    onChange={handleChange}
 					            	onBlur={handleBlur}
-									value={values['beta-first-name']}
+									value={values.betaFirstName}
 				                    placeholder="First Name (optional)"
 				                    aria-required="false"
 				                />
-				                <label for="beta-first-name">First Name (optional)</label>
+				                <label for="betaFirstName">First Name (optional)</label>
 				            </div>
 				            <div className={styles.spacer}/>
 				            <div class={styles.inputField}>
 				                <input
-				                    id="beta-last-name"
+				                    id="betaLastName"
 				                    type="text"
-				                    name="beta-last-name"
+				                    name="betaLastName"
 				                    onChange={handleChange}
 					            	onBlur={handleBlur}
-									value={values['beta-last-name']}
+									value={values.betaLastName}
 				                    placeholder="Last Name (optional)"
 				                    aria-required="false"
 				                />
-				                <label for="beta-last-name">Last Name (optional)</label>
+				                <label for="betaLastName">Last Name (optional)</label>
 				            </div>
 				        </div>
 				    </div>
