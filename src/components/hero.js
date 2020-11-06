@@ -1,14 +1,22 @@
 import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import { GrFormClose } from "react-icons/gr"
+
 import HomeVideoMP4 from "../videos/final.mp4"
 import styles from "../styles/Hero.module.css"
-import { GrFormClose } from "react-icons/gr"
+import Form from "./form.js"
 
 const Hero = () => {
     const [displaySignupModal, setDisplaySignupModal] = useState(false);
 
     useEffect(() => {
+        if (typeof window !== "undefined") {
+            if (window.history.replaceState) {
+                window.history.replaceState(null, null, window.location.href);
+            }
+        }
+
         setTimeout(() => {
             if (typeof document !== "undefined") document.body.classList.add('modal-open')
             setDisplaySignupModal(true)
@@ -56,54 +64,7 @@ const Hero = () => {
                         <div className={styles.callToAction}>
                             Hop on the VIP list for <span className="bold">exclusive</span> access to the app, our newsletter, events, and special travel offers!
                         </div>
-                        <form
-                            name="beta-signup"
-                            method="POST"
-                            data-netlify="true"
-                            className={styles.form}
-                            action="/"
-                        >
-                            <div className={styles.inputContainer}>
-                                <div class={styles.inputField}>
-                                    <input
-                                        id="beta-email"
-                                        type="email"
-                                        name="beta-email"
-                                        placeholder="Email (required)"
-                                        aria-required="true"
-                                    />
-                                    <label for="beta-email">Email (required)</label>
-                                </div>
-                                <div className={styles.nameInputContainer}>
-                                    <div class={styles.inputField}>
-                                        <input
-                                            id="beta-first-name"
-                                            type="text"
-                                            name="beta-first-name"
-                                            placeholder="First Name (optional)"
-                                            aria-required="false"
-                                        />
-                                        <label for="beta-first-name">First Name (optional)</label>
-                                    </div>
-                                    <div className={styles.spacer}/>
-                                    <div class={styles.inputField}>
-                                        <input
-                                            id="beta-second-name"
-                                            type="text"
-                                            name="beta-second-name"
-                                            placeholder="Last Name (optional)"
-                                            aria-required="false"
-                                        />
-                                        <label for="beta-second-name">Last Name (optional)</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <input type="hidden" name="form-name" value="beta-signup" />
-                            <div className={styles.buttonContainer}>
-                                <div className={styles.buttonShadow} />
-                                <input type="submit" value="Join"/>
-                            </div>
-                        </form>
+                        <Form />
                     </div>
                 </div>
             }
@@ -117,54 +78,7 @@ const Hero = () => {
                             <div className={styles.callToAction}>
                                 Hop on the VIP list for <span className="bold">exclusive</span> access to the app, our newsletter, events, and special travel offers!
                             </div>
-                            <form
-                                name="beta-signup"
-                                method="POST"
-                                data-netlify="true"
-                                className={styles.form}
-                                action="/"
-                            >
-                                <div className={styles.inputContainer}>
-                                    <div class={styles.inputField}>
-                                        <input
-                                            id="beta-email"
-                                            type="email"
-                                            name="beta-email"
-                                            placeholder="Email (required)"
-                                            aria-required="true"
-                                        />
-                                        <label for="beta-email">Email (required)</label>
-                                    </div>
-                                    <div className={styles.nameInputContainer}>
-                                        <div class={styles.inputField}>
-                                            <input
-                                                id="beta-first-name"
-                                                type="text"
-                                                name="beta-first-name"
-                                                placeholder="First Name (optional)"
-                                                aria-required="false"
-                                            />
-                                            <label for="beta-first-name">First Name (optional)</label>
-                                        </div>
-                                        <div className={styles.spacer}/>
-                                        <div class={styles.inputField}>
-                                            <input
-                                                id="beta-second-name"
-                                                type="text"
-                                                name="beta-second-name"
-                                                placeholder="Last Name (optional)"
-                                                aria-required="false"
-                                            />
-                                            <label for="beta-second-name">Last Name (optional)</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <input type="hidden" name="form-name" value="beta-signup" />
-                                <div className={styles.buttonContainer}>
-                                    <div className={styles.buttonShadow} />
-                                    <input type="submit" value="Join"/>
-                                </div>
-                            </form>
+                            <Form />
                         </div>
                     </div>
                 </div>
