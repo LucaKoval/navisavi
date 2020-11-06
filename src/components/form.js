@@ -82,6 +82,7 @@ const Form = () => {
 				            </div>
 				        </div>
 				    </div>
+				    <input type="hidden" name="form-name" value="beta-signup" />
 				    <div className={styles.buttonContainer}>
 				        <div className={styles.buttonShadow} />
 				        <input type="submit" value="Join"/>
