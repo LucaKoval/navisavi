@@ -20,7 +20,7 @@ const Hero = () => {
         setTimeout(() => {
             if (typeof document !== "undefined") document.body.classList.add('modal-open')
             setDisplaySignupModal(true)
-        }, 0)
+        }, 15000)
     }, [])
 
     const closeModal = () => {
