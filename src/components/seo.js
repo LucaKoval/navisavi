@@ -46,9 +46,17 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `og:url`,
+          content: `https://navisaviapp.com/`,
+        }
+        {
           property: `og:type`,
           content: `website`,
         },
+        {
+          property: `fb:app_id`,
+          content: `427653031409755`,
+        }
         {
           name: `twitter:card`,
           content: `summary`,
@@ -65,6 +73,10 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `twitter:image`,
+          content: Icon
+        }
       ].concat(meta)}
     />
   )
