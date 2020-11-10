@@ -48,7 +48,7 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:url`,
           content: `https://navisaviapp.com/`,
-        }
+        },
         {
           property: `og:type`,
           content: `website`,
@@ -56,7 +56,7 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `fb:app_id`,
           content: `427653031409755`,
-        }
+        },
         {
           name: `twitter:card`,
           content: `summary`,

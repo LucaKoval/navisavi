@@ -1,8 +1,6 @@
 import React, { Component } from "react"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"
-import { GrClose } from "react-icons/gr"
 import { FaBars, FaRegWindowClose, FaFacebook, FaInstagram, FaLinkedin, FaTwitter,FaAngellist } from "react-icons/fa"
 import { Link } from "gatsby"
 import styles from "../styles/Header.module.css"
