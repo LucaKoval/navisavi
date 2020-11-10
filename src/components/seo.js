@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import Icon from "../images/icon.png"
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -33,6 +34,10 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          name: `og:image`,
+          content: Icon
+        },
+        {
           property: `og:title`,
           content: title,
         },
@@ -41,8 +46,16 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `og:url`,
+          content: `https://navisaviapp.com/`,
+        },
+        {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `fb:app_id`,
+          content: `427653031409755`,
         },
         {
           name: `twitter:card`,
@@ -60,6 +73,10 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `twitter:image`,
+          content: Icon
+        }
       ].concat(meta)}
     />
   )
