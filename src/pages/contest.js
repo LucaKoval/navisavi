@@ -14,7 +14,7 @@ const ContestPage = () => {
 
 	return (
 		<div>
-	      	<SEO title="Contest" />
+	      	<SEO title="Gift Card Contest" />
 			<div className="wishpond-campaign" data-wishpond-id="2594271" data-wishpond-href="https://embedded.wishpondpages.com/lp/2594271/"></div>
 		</div>
 	)
