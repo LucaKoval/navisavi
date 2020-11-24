@@ -67,7 +67,7 @@ const Contact = () => {
                         <div className={styles.contactLabel}>Phone</div>
                         <div className={styles.contactValue}>1-801-557-7985</div>
                         <div className={styles.contactLabel}>Email</div>
-                        <div className={styles.contactValue}>contact@navisaviapp.com</div>
+                        <div className={styles.contactValue}>contact@navi-savi.com</div>
                         <div className={styles.socialLinksContainer}>
                             <a
                                 href="https://www.facebook.com/navisaviapp/"
