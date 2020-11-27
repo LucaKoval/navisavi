@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import {
   FaFacebook,
   FaInstagram,
@@ -11,6 +11,14 @@ import SEO from "../components/seo"
 import styles from "../styles/Contact.module.css"
 
 const Contact = () => {
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            if (window.history.replaceState) {
+                window.history.replaceState(null, null, window.location.href)
+            }
+        }
+    }, [])
+
     return (
         <Layout>
             <SEO title="Contact" />
