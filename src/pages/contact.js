@@ -55,6 +55,7 @@ const Contact = () => {
                             className=""
                             required
                         />
+                        <input type="hidden" name="form-name" value="howdy" />
                         <div className={styles.buttonContainer}>
                             <input type="submit" value="Submit" />
                             <div className={styles.buttonShadow} />
