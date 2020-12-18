@@ -10,6 +10,12 @@ import Form from "./form.js"
 const Hero = () => {
     const [displaySignupModal, setDisplaySignupModal] = useState(false);
 
+    const escapeModal = (e) => {
+        if (typeof document !== "undefined" && e.keyCode === 27 && document.body.className.includes("modal-open")) {
+            setDisplaySignupModal(false)
+        }
+    }
+
     useEffect(() => {
         if (typeof window !== "undefined") {
             if (window.history.replaceState) {
@@ -21,6 +27,8 @@ const Hero = () => {
             if (typeof document !== "undefined") document.body.classList.add('modal-open')
             setDisplaySignupModal(true)
         }, 15000)
+
+        document.addEventListener('keydown', escapeModal)
     }, [])
 
     const closeModal = () => {
@@ -59,7 +67,7 @@ const Hero = () => {
             { displaySignupModal &&
                 <div className={styles.signupModalContainer}>
                     <div className={styles.signupModal}>
-                        <GrFormClose className={styles.closeModal} onClick={closeModal}/>
+                        <GrFormClose className={styles.closeModal} size="30px" onClick={closeModal}/>
                         <div className={styles.signupModalTagline}>Sign Up</div>
                         <div className={styles.callToAction}>
                             Hop on the VIP list for <span className="bold">exclusive</span> access to the app, our newsletter, events, and special travel offers!
