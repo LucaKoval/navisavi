@@ -24,6 +24,10 @@
     padding-bottom: 0px;
 }
 
+.closeModalContainer:hover {
+    cursor: pointer;
+}
+
 .closeModal {
     position: absolute;
     top: 30px;
