@@ -31,7 +31,7 @@ const Hero = () => {
         setTimeout(() => {
             if (typeof document !== "undefined") document.body.classList.add('modal-open')
             setDisplaySignupModal(true)
-        }, 100)
+        }, 15000)
 
         document.addEventListener('keydown', escapeModal)
     }, [])
