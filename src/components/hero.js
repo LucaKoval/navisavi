@@ -10,9 +10,14 @@ import Form from "./form.js"
 const Hero = () => {
     const [displaySignupModal, setDisplaySignupModal] = useState(false);
 
+    const closeModal = () => {
+        setDisplaySignupModal(false)
+        if (typeof document !== "undefined") document.body.className = document.body.className.replace('modal-open','')
+    }
+
     const escapeModal = (e) => {
         if (typeof document !== "undefined" && e.keyCode === 27 && document.body.className.includes("modal-open")) {
-            setDisplaySignupModal(false)
+            closeModal()
         }
     }
 
@@ -30,11 +35,6 @@ const Hero = () => {
 
         document.addEventListener('keydown', escapeModal)
     }, [])
-
-    const closeModal = () => {
-        setDisplaySignupModal(false)
-        if (typeof document !== "undefined") document.body.className = document.body.className.replace('modal-open','')
-    }
 
     const data = useStaticQuery(graphql`
       {
@@ -67,7 +67,9 @@ const Hero = () => {
             { displaySignupModal &&
                 <div className={styles.signupModalContainer}>
                     <div className={styles.signupModal}>
-                        <GrFormClose className={styles.closeModal} size="30px" onClick={closeModal}/>
+                        <div className={styles.closeModalContainer}>
+                            <GrFormClose className={styles.closeModal} size="30px" onClick={closeModal}/>
+                        </div>
                         <div className={styles.signupModalTagline}>Sign Up</div>
                         <div className={styles.callToAction}>
                             Hop on the VIP list for <span className="bold">exclusive</span> access to the app, our newsletter, events, and special travel offers!
