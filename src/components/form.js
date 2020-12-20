@@ -42,7 +42,7 @@ const Form = () => (
 			                placeholder="Email (required)"
 			                aria-required="true"
 			            />
-			            <label for="betaEmail">Email (required)</label>
+			            <label htmlFor="betaEmail">Email (required)</label>
 			        </div>
 			        { (errors.betaEmail && touched.betaEmail) &&
 			        	<div className={styles.error} style={ (errors.betaEmail && touched.betaEmail) ? {} : { display: 'none' }}>
@@ -61,10 +61,10 @@ const Form = () => (
 			                    placeholder="First Name (optional)"
 			                    aria-required="false"
 			                />
-			                <label for="betaFirstName">First Name (optional)</label>
+			                <label htmlFor="betaFirstName">First Name (optional)</label>
 			            </div>
 			            <div className={styles.spacer}/>
-			            <div class={styles.inputField}>
+			            <div className={styles.inputField}>
 			                <input
 			                    id="betaLastName"
 			                    type="text"
@@ -75,7 +75,7 @@ const Form = () => (
 			                    placeholder="Last Name (optional)"
 			                    aria-required="false"
 			                />
-			                <label for="betaLastName">Last Name (optional)</label>
+			                <label htmlFor="betaLastName">Last Name (optional)</label>
 			            </div>
 			        </div>
 			    </div>
