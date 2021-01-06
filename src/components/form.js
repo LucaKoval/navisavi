@@ -21,7 +21,9 @@ const Form = () => (
             errors,
             touched,
             handleChange,
-            handleBlur
+            handleBlur,
+            dirty,
+            isValid
         }) => (
 			<form
 			    name="beta-signup"
@@ -81,8 +83,9 @@ const Form = () => (
 			    </div>
 			    <input type="hidden" name="form-name" value="beta-signup" />
 			    <div className={styles.buttonContainer}>
+			    	{ !(isValid && dirty) && <div className={styles.buttonDisabled} /> }
 			        <div className={styles.buttonShadow} />
-			        <input type="submit" value="Join"/>
+			        <input type="submit" value="Join" disabled={!(isValid && dirty)} />
 			    </div>
 			</form>
 		)}
