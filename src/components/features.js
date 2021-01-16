@@ -1,7 +1,6 @@
 import React from "react"
 
 import Sizzle from "../videos/sizzle.mp4"
-import EarnLink from "./earnLink"
 import styles from "../styles/Features.module.css"
 
 const Features = () => {
