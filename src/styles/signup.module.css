@@ -24,7 +24,7 @@
     font-family: "SofiaPro-Bold", sans-serif;
     color: var(--dark-grey);
     margin-bottom: 20px;
-    position: relative;
+    position: relative; 
     right: 5px;
 }
 
