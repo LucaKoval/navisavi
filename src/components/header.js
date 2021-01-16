@@ -112,7 +112,7 @@ export default class Header extends Component {
 			    	<div className={styles.darkenBackground} style={ navOpen ? {} : { display: "none" } } />
 			    	<div className={`${styles.hamburgerMenu} ${navOpen ? "" : styles.hamburgerMenuClose}`}>
 				    	<div className={styles.hamburgerMenuItemContainer}>
-				    		<a href="/#features" className={styles.hamburgerMenuItem} onClick={() => this.toggleNav()}>Features</a>
+				    		<a href="/#who" className={styles.hamburgerMenuItem} onClick={() => this.toggleNav()}>Who We Are</a>
 				    	</div>
 				    	<div className={styles.hamburgerMenuItemContainer}>
 					    	<Link to="/earn" className={styles.hamburgerMenuItem} onClick={() => this.toggleNav()}>
@@ -173,7 +173,7 @@ export default class Header extends Component {
 		    	</div>
 		    	<div className={styles.navRight} style={ displayDownloadButton() ? { marginTop: -2, top: 9, right: 45 } : { marginTop: 8, bottom: 0, right: 12 }}>
 			    	<div className={styles.navItem}>
-			    		<a href="/#features" className={styles.navLink}>Features</a>
+			    		<a href="/#who" className={styles.navLink}>Who We Are</a>
 			    	</div>
 			    	<div className={styles.navItem}>
 				    	<Link to="/earn" className={styles.navLink}>
