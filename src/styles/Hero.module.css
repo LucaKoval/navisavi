@@ -172,7 +172,7 @@
 .buttonDisabled {
     position: absolute;
     top: 30px;
-    z-index: 100;
+    z-index: 8;
     border-radius: 4px;
     width: 100%;
     height: 60px;
