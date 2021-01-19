@@ -80,6 +80,10 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `google-site-verification`,
           content: `1q1NENOLXZzWrUWXLHT3sG_jH2DqPR_jX629f1W-NoU`
+        },
+        {
+          property: `p:domain_verify`,
+          content: `6634404695052fdc3365154143bd8423`
         }
       ].concat(meta)}
     />
