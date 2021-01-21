@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { GrFormClose } from "react-icons/gr"
@@ -8,32 +8,12 @@ import styles from "../styles/Hero.module.css"
 import Form from "./form.js"
 
 const Hero = () => {
-    const [displaySignupModal, setDisplaySignupModal] = useState(false);
-
-    const closeModal = () => {
-        setDisplaySignupModal(false)
-        if (typeof document !== "undefined") document.body.className = document.body.className.replace('modal-open','')
-    }
-
-    const escapeModal = (e) => {
-        if (typeof document !== "undefined" && e.keyCode === 27 && document.body.className.includes("modal-open")) {
-            closeModal()
-        }
-    }
-
     useEffect(() => {
         if (typeof window !== "undefined") {
             if (window.history.replaceState) {
                 window.history.replaceState(null, null, window.location.href)
             }
         }
-
-        setTimeout(() => {
-            if (typeof document !== "undefined") document.body.classList.add('modal-open')
-            setDisplaySignupModal(true)
-        }, 15000)
-
-        document.addEventListener('keydown', escapeModal)
     }, [])
 
     const data = useStaticQuery(graphql`
@@ -64,26 +44,11 @@ const Hero = () => {
     `)
     return (
         <div>
-            { displaySignupModal &&
-                <div className={styles.signupModalContainer}>
-                    <div className={styles.signupModal}>
-                        <div className={styles.closeModalContainer}>
-                            <GrFormClose className={styles.closeModal} size="30px" onClick={closeModal}/>
-                        </div>
-                        <div className={styles.signupModalTagline}>Sign Up</div>
-                        <div className={styles.callToAction}>
-                            Hop on the VIP list for <span className="bold">exclusive</span> access to the app, our newsletter, events, and special travel offers!
-                        </div>
-                        <Form />
-                    </div>
-                </div>
-            }
             <div className={styles.container}>
                 <div className={`${styles.leftContainer} ${styles.mainElements}`}>
                     <div className={styles.content}>
-                        <div className={styles.tagline}><div>Find Your Journey.</div></div>
-                        <div className={styles.subTagline}><div className={styles.firstSubTagline}>Genuine travel videos uploaded by real people.</div></div>
-                        <div className={styles.subTagline}><div className={styles.lastSubTagline}>Discover destinations, plan itineraries, and upload your travel clips for rewards.</div></div>
+                        <div className={styles.tagline}><div>Genuine travel videos.</div></div>
+                        <div className={styles.tagline}><div className={styles.lastSubTagline}>Uploaded by real people.</div></div>
                         <div className={styles.signUpContainer} id="signup">
                             <div className={styles.callToAction}>
                                 Hop on the VIP list for <span className="bold">exclusive</span> access to the app, our newsletter, events, and special travel offers!

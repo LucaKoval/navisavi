@@ -1,50 +1,3 @@
-.signupModalContainer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: var(--dark-grey);
-}
-
-.signupModal {
-    position: relative;
-    width: 70%;
-    background: #fff;
-    border-radius: 4px;
-    padding: 40px;
-    padding-bottom: 0px;
-}
-
-.closeModalContainer:hover {
-    cursor: pointer;
-}
-
-.closeModal {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    color: var(--dark-grey);
-}
-
-.signupModalTagline {
-    margin-bottom: 20px;
-
-    position: relative;
-    left: -2.4px;
-    font-size: 83px;
-    font-family: "SofiaPro-Bold", sans-serif;
-    padding-bottom: 5px;
-}
-
 .container {
     display: flex;
     flex-direction: row;
@@ -92,7 +45,7 @@
 .tagline > div {
     position: relative;
     left: -2.4px;
-    font-size: 83px;
+    font-size: calc(10px + 100vw/25);
     font-family: "SofiaPro-Bold", sans-serif;
     padding-bottom: 5px;
 }
@@ -109,15 +62,8 @@
     color: var(--light-grey);
 }
 
-.firstSubTagline {
-	margin-bottom: 3px;
-	font-size: 30px;
-    font-family: "SofiaPro-Bold", sans-serif;
-}
-
 .lastSubTagline {
-	font-size: 28px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .signUpContainer {
@@ -347,25 +293,9 @@ label {
 
 /* Dimension checks */
 
-@media screen and (max-width: 1389px) {
-    .content {
-        /*padding-top: 265px;*/
-    }
-
-    .tagline > div {
-        font-size: 70px;
-    }
-}
-
 @media screen and (max-width: 1221px) {
     .content {
         padding-top: 122px;
-    }
-}
-
-@media screen and (max-width: 1174px) {
-    .tagline > div {
-        font-size: 60px;
     }
 }
 
@@ -413,6 +343,10 @@ label {
         padding: 0;
     }
 
+    .tagline > div {
+        font-size: calc(30px + 100vw/25);
+    }
+
     .videoContainer {
         flex-direction: column;
         justify-content: flex-start;
@@ -434,10 +368,6 @@ label {
 }
 
 @media screen and (max-width: 811px) {
-    .tagline > div {
-        font-size: 60px;
-    }
-
     .videoContainer {
         padding-top: 10px;
     }
@@ -453,11 +383,7 @@ label {
     .container {
         height: 1340px;
     }
-
-    .tagline > div {
-        font-size: 50px;
-    }
-
+    
     .nameInputContainer {
         flex-direction: column;
     }
